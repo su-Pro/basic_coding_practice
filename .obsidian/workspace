@@ -4,13 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "e20edc5233df7be6",
+        "id": "f518046b55063439",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "onePage/contest templates.md",
-            "mode": "source"
+            "file": "README.md",
+            "mode": "preview"
           }
         }
       }
@@ -39,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#矩阵",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -52,7 +52,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 519
+    "width": 250
   },
   "right": {
     "id": "8f1e2426d7a0285b",
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "onePage/contest templates.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "onePage/contest templates.md"
+                "file": "README.md"
               }
             }
           },
@@ -107,17 +107,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "e20edc5233df7be6",
+  "active": "f518046b55063439",
   "lastOpenFiles": [
-    "onePage/contest templates.md",
-    "onePage/python-skill-index.md",
-    "onePage/python skills.md",
     "README.md",
-    "onePage/图论基础与搜索.md",
     "onePage/基础算法.md",
+    "leetcode/editor/cn/doc/content/[2100]Find Good Days to Rob the Bank.md",
     "onePage/基础数据结构.md",
-    "onePage/动态规划.md",
+    "onePage/tree_onepage.md",
     "onePage/常见数学问题.md",
-    "onePage/数据结构基础.md"
+    "onePage/动态规划.md",
+    "onePage/contest templates.md",
+    "onePage/python skills.md",
+    "onePage/图论基础与搜索.md"
   ]
 }
