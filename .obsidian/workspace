@@ -4,14 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "f518046b55063439",
+        "id": "58e08219d5b158d5",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "README.md",
-            "mode": "preview"
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -52,7 +49,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 250
+    "width": 246.99999809265137
   },
   "right": {
     "id": "8f1e2426d7a0285b",
@@ -68,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,9 +80,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "README.md"
-              }
+              "state": {}
             }
           },
           {
@@ -99,25 +93,34 @@
                 "useHierarchy": true
               }
             }
+          },
+          {
+            "id": "9f6b82ddd718ce68",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
     "width": 300,
     "collapsed": true
   },
-  "active": "f518046b55063439",
+  "active": "58e08219d5b158d5",
   "lastOpenFiles": [
-    "README.md",
-    "onePage/基础算法.md",
-    "leetcode/editor/cn/doc/content/[2100]Find Good Days to Rob the Bank.md",
-    "onePage/基础数据结构.md",
-    "onePage/tree_onepage.md",
-    "onePage/常见数学问题.md",
-    "onePage/动态规划.md",
-    "onePage/contest templates.md",
-    "onePage/python skills.md",
-    "onePage/图论基础与搜索.md"
+    "leetcode/processed/[剑指 Offer II 038]每日温度.md",
+    "leetcode/processed/[2130]Maximum Twin Sum of a Linked List.md",
+    "leetcode/processed/[2129]Capitalize the Title.md",
+    "leetcode/processed/[2100]Find Good Days to Rob the Bank.md",
+    "leetcode/processed/[2058]Find the Minimum and Maximum Number of Nodes Between Critical Points.md",
+    "leetcode/processed/[2057]Smallest Index With Equal Value.md",
+    "leetcode/processed/[1963]使字符串平衡的最小交换次数.md",
+    "leetcode/processed/[1962]移除石子使总数最小.md",
+    "leetcode/processed/[1961]检查字符串是否为数组前缀.md",
+    "leetcode/processed/[1926]Nearest Exit from Entrance in Maze.md"
   ]
 }

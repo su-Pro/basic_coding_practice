@@ -1,41 +1,21 @@
 # Readme!
 
-本仓库定义：***不是（是）什么？***
+> 定义：是我自学的指南,不是工业应用或研究
 
-- 不是工业应用或研究
-- 不是***60天***轻松过面试指南
-- 是我自学的指南
-- 是我刷题心得体会
+##  onepage
 
-onepage的定义：***不是（是）什么？***
+> 定义：整理某课程某书籍的学习笔记
 
-- 不是资料收集场
-- 不是海量练习题
-- 是经典问题思路解析
-- 是综合整理某课程某书籍笔记
+[[「laioffer - 面试重点」]]
+[[「acwing - 竞赛基础」]]
+[[《剑指offer 第二版》]]
+[[《挑战程序设计竞赛》]]
 
-## basics onepage
-
-- [[基础数据结构]]
-- [[基础算法]]
-- [[图论基础与搜索]]
-- [[动态规划]]
-- [[常见数学问题]]
-- [[python skills]]
-- [[contest templates]]
-
-## books
-
-### 《挑战程序设计竞赛》
-
-1. (抽签) [18. 4Sum](https://leetcode-cn.com/problems/4sum/)
-2. (三角形) [976. Largest Perimeter Triangle](https://leetcode-cn.com/problems/largest-perimeter-triangle/)
-3. (
-   Ants) [1503. Last Moment Before All Ants Fall Out of a Plank](https://leetcode-cn.com/problems/last-moment-before-all-ants-fall-out-of-a-plank/)
-
-> 《剑指offer》&《剑指offer 专项突破》
 
 ## probelms table
+
+> 定义：收集的leecode/acwing-oj已做题目，按照 tags 切分，便于 onepage 组织。
+
 
 ***tags***
 
@@ -100,7 +80,11 @@ onepage的定义：***不是（是）什么？***
 | [[283. 移动零]]                                                                                                                    |                                      |                                |              |     |     |     |
 | [2101. Detonate the Maximum Bombs](https://leetcode-cn.com/problems/detonate-the-maximum-bombs/)                                   |                                      |                                |              |     |     |     |
 
-#### USACO
+#### AC-wing
+
+基本出自 USACO、codefocus
+
+
 
 | 题目/答案                                                                                | Tag | 难度            | 推荐指数 |
 | ---------------------------------------------------------------------------------------- | --- | --------------- | -------- |
