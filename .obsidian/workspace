@@ -4,13 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "f518046b55063439",
+        "id": "6769affab3b7217a",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
             "file": "README.md",
-            "mode": "preview"
+            "mode": "source"
           }
         }
       }
@@ -52,7 +52,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 250
+    "width": 443,
+    "collapsed": true
   },
   "right": {
     "id": "8f1e2426d7a0285b",
@@ -99,25 +100,34 @@
                 "useHierarchy": true
               }
             }
+          },
+          {
+            "id": "9f6b82ddd718ce68",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
     "width": 300,
     "collapsed": true
   },
-  "active": "f518046b55063439",
+  "active": "6769affab3b7217a",
   "lastOpenFiles": [
     "README.md",
-    "onePage/基础算法.md",
-    "leetcode/editor/cn/doc/content/[2100]Find Good Days to Rob the Bank.md",
-    "onePage/基础数据结构.md",
-    "onePage/tree_onepage.md",
-    "onePage/常见数学问题.md",
-    "onePage/动态规划.md",
-    "onePage/contest templates.md",
-    "onePage/python skills.md",
-    "onePage/图论基础与搜索.md"
+    "leetcode/editor/cn/doc/content/[520]Detect Capital.md",
+    "leetcode/editor/cn/doc/content/[525]Contiguous Array.md",
+    "leetcode/editor/cn/doc/content/[79]Word Search.md",
+    "algorithms/45.跳跃游戏 II.md",
+    "algorithms/51. N 皇后.md",
+    "algorithms/55.跳跃游戏.md",
+    "algorithms/56. 合并区间.md",
+    "algorithms/59. 螺旋矩阵 II.md",
+    "algorithms/408. 有效单词缩写.md"
   ]
 }

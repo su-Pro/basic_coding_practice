@@ -53,6 +53,12 @@ onepage的定义：***不是（是）什么？***
 | [[[54]Spiral Matrix]]                                                                                                              | #模拟 #bfs #todo 递归dfs             | 中等                           | 🌟🌟🌟🌟🌟   |     |     |     |
 | [[[71]Simplify Path]]                                                                                                              | #模拟 #stack                         | 中等                           | 🌟🌟🌟🌟     |     |     |     |
 | [[[24]Swap Nodes in Pairs]]                                                                                                        | #模拟 #link-node                     |                                |              |     |     |     |
+| [[[67]Add Binary]]                                                                                                                 | #模拟 #高精度                     |                                |              |     |     |     |
+| [[[520]Detect Capital]]                                                                                                            | #模拟                                |                                |              |     |     |     |
+| [[[523]Continuous Subarray Sum]]                                                                                                   | #PrefixSum                           |                                |              |     |     |     |
+| [[[524]Longest Word in Dictionary through Deleting]]                                                                               | #模拟                                |                                |              |     |     |     |
+| [[[525]Contiguous Array]]                                                                                                          | #PrefixSum                           |                                |              |     |     |     |
+| [[[79]Word Search]]                                                                                                                | #dfs                                 |                                |              |     |     |     |
 |                                                                                                                                    |                                      |                                |              |     |     |     |
 | [2125. 银行中的激光束数量](https://leetcode-cn.com/problems/number-of-laser-beams-in-a-bank/)                                      | #矩阵 #数学                          |                                | 🌟🌟🌟       |     |     |     |
 | [1047. 删除字符串中的所有相邻重复项](https://leetcode-cn.com/problems/remove-all-adjacent-duplicates-in-string/)                   |                                      |                                | ⭐️⭐️⭐️⭐️ |     |     |     |
@@ -100,7 +106,11 @@ onepage的定义：***不是（是）什么？***
 | [[283. 移动零]]                                                                                                                    |                                      |                                |              |     |     |     |
 | [2101. Detonate the Maximum Bombs](https://leetcode-cn.com/problems/detonate-the-maximum-bombs/)                                   |                                      |                                |              |     |     |     |
 
-#### USACO
+#### AC-wing
+
+基本出自 USACO、codefocus
+
+
 
 | 题目/答案                                                                                | Tag | 难度            | 推荐指数 |
 | ---------------------------------------------------------------------------------------- | --- | --------------- | -------- |
