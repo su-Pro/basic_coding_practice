@@ -29,4 +29,29 @@
 	<li>The number of nodes in the&nbsp;list&nbsp;is in the range <code>[0, 100]</code>.</li>
 	<li><code>0 &lt;= Node.val &lt;= 100</code></li>
 </ul>
-<div><div>Related Topics</div><div><li>递归</li><li>链表</li></div></div><br><div><li>👍 1219</li><li>👎 0</li></div>
+<div><div>Related Topics</div><div><li>递归</li><li>链表</li></div></div><br><div><li>👍 1212</li><li>👎 0</li></div> 
+<br>
+<strong> solution: </strong>
+
+```javascript
+
+```
+
+```python3
+class Solution:
+    def swapPairs(self, head: ListNode) -> ListNode:
+        dummy_node = ListNode()
+
+        dummy_node.next = head
+
+        p = dummy_node
+        while p and p.next and p.next.next:
+            a, b = p.next, p.next.next
+            p.next = b
+            a.next = b.next
+            b.next = a
+            p = a
+        return dummy_node.next
+
+```
+  

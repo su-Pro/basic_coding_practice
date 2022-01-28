@@ -38,13 +38,68 @@ onepage的定义：***不是（是）什么？***
 ## probelms table
 
 ***tags***
-
- #模拟 #矩阵 #sliding-window #queue #进制 #数学  
-
+> 📌 #数学 #数组 #广度优先搜索 #栈 #链表 #设计 #字符串 #递归 #位运算 #贪心 #深度优先搜索 #图 #树
 #### Leetcode
+  
+   | Problem | Tag | popular |
+    | --------- | --- | -------- |
+    | [[[1716]计算力扣银行的钱]] | #未知 | 23 |
+    | [[[1925]统计平方和三元组的数目]] | #未知 | 3 |
+    | [[[1926]Nearest Exit from Entrance in Maze]] | #未知 | 49 |
+    | [[[1961]检查字符串是否为数组前缀]] | #未知 | 7 |
+    | [[[1962]移除石子使总数最小]] | #未知 | 67 |
+    | [[[1963]使字符串平衡的最小交换次数]] | #未知 | 74 |
+    | [[[2057]Smallest Index With Equal Value]] | #未知 | 97 |
+    | [[[2058]Find the Minimum and Maximum Number of Nodes Between Critical Points]] | #未知 | 52 |
+    | [[[206]反转链表]] | #未知 | 36 |
+    | [[[208]Implement Trie (Prefix Tree)]] | #未知 | 0 |
+    | [[[2100]Find Good Days to Rob the Bank]] | #未知 | 50 |
+    | [[[2129]Capitalize the Title]] | #未知 | 14 |
+    | [[[2130]Maximum Twin Sum of a Linked List]] | #未知 | 77 |
+    | [[[237]删除链表中的节点]] | #未知 | 37 |
+    | [[[24]Swap Nodes in Pairs]] | #未知 | 60 |
+    | [[[263]Ugly Number]] | #未知 | 53 |
+    | [[[268]丢失的数字]] | #未知 | 90 |
+    | [[[316]Remove Duplicate Letters]] | #未知 | 35 |
+    | [[[334]Increasing Triplet Subsequence]] | #未知 | 94 |
+    | [[[496]Next Greater Element I]] | #未知 | 15 |
+    | [[[504]Base 7]] | #未知 | 34 |
+    | [[[520]Detect Capital]] | #未知 | 36 |
+    | [[[523]Continuous Subarray Sum]] | #未知 | 74 |
+    | [[[547]Number of Provinces]] | #未知 | 78 |
+    | [[[54]Spiral Matrix]] | #未知 | 24 |
+    | [[[581]最短无序连续子数组]] | #未知 | 51 |
+    | [[[649]Dota2 Senate]] | #未知 | 73 |
+    | [[[67]Add Binary]] | #未知 | 46 |
+    | [[[716]Max Stack]] | #未知 | 58 |
+    | [[[71]Simplify Path]] | #未知 | 35 |
+    | [[[739]Daily Temperatures]] | #未知 | 1 |
+    | [[[747]Largest Number At Least Twice of Others]] | #未知 | 87 |
+    | [[[787]Cheapest Flights Within K Stops]] | #未知 | 97 |
+    | [[[79]Word Search]] | #未知 | 85 |
+    | [[[904]Fruit Into Baskets]] | #未知 | 67 |
+    | [[[958]Check Completeness of a Binary Tree]] | #未知 | 74 |
+    | [[[997]Find the Town Judge]] | #未知 | 9 |
+    | [[[剑指 Offer II 038]每日温度]] | #未知 | 74 |
+
+#### AC-wing
+
+基本出自 USACO、codefocus
+
+
+
+| 题目/答案                                                                                | Tag | 难度            | 推荐指数 |
+| ---------------------------------------------------------------------------------------- | --- | --------------- | -------- |
+| [USACO 2012 Grazing Patterns](http://www.usaco.org/index.php?page=viewproblem2&cpid=105) |     | Bronze Division |          |
+|                                                                                          |     |                 |          |
+
+## TODO:
+
+老题筛选
+
 
 | 题目/答案                                                                                                                          | Tag                                  | 难度                           | 推荐指数     |     |     |     |
-| ---------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ | ------------------------------ | ------------ | --- | --- | --- |
+| ---------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ | ------------------------------ | ------------ | --- | --- |-- |
 | [[[649]Dota2 Senate]]                                                                                                              | #queue                               | 中等                           | 🌟🌟🌟🌟🌟   |     |     |     |
 | [[[904]Fruit Into Baskets]]                                                                                                        | #sliding-window                      | 中等                           | 🌟🌟🌟🌟🌟   |     |     |     |
 | [[[2100]Find Good Days to Rob the Bank]]                                                                                           | #sliding-window #todo dp/前缀和      | 中等                           | 🌟🌟🌟🌟     |     |     |     |
@@ -105,20 +160,7 @@ onepage的定义：***不是（是）什么？***
 | [860. lemonade-change](https://leetcode-cn.com/problems/lemonade-change/)                                                          | #greedy                              | [[455. assign-cookies]]        |              |     |     |     |
 | [[283. 移动零]]                                                                                                                    |                                      |                                |              |     |     |     |
 | [2101. Detonate the Maximum Bombs](https://leetcode-cn.com/problems/detonate-the-maximum-bombs/)                                   |                                      |                                |              |     |     |     |
-
-#### AC-wing
-
-基本出自 USACO、codefocus
-
-
-
-| 题目/答案                                                                                | Tag | 难度            | 推荐指数 |
-| ---------------------------------------------------------------------------------------- | --- | --------------- | -------- |
-| [USACO 2012 Grazing Patterns](http://www.usaco.org/index.php?page=viewproblem2&cpid=105) |     | Bronze Division |          |
-|                                                                                          |     |                 |          |
-
-## TODO:
-
-1. 脚本代码: 聚合py代码以及md文件。
-2. 表格中的题：
-    - [ ] 全部替换成插件生成的文件链接，并且强制使用英语 
+ch #two-pointer #有问题  | [[704. Binary Search]]         |              |     |     |     |
+| [860. lemonade-change](https://leetcode-cn.com/problems/lemonade-change/)                                                          | #greedy                              | [[455. assign-cookies]]        |              |     |     |     |
+| [[283. 移动零]]                                                                                                                    |                                      |                                |              |     |     |     |
+| [2101. Detonate the Maximum Bombs](https://leetcode-cn.com/problems/detonate-the-maximum-bombs/)                                   |                                      |                                |              |     |     |     |
