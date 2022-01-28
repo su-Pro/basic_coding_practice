@@ -3,5 +3,7 @@
   "vimMode": true,
   "emacsyKeys": false,
   "readableLineLength": false,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "legacyEditor": false,
+  "livePreview": true
 }

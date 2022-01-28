@@ -7,8 +7,12 @@
         "id": "58e08219d5b158d5",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "leetcode/laioffer.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -65,6 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "leetcode/laioffer.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -80,7 +85,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "leetcode/laioffer.md"
+              }
             }
           },
           {
@@ -107,20 +114,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "active": "58e08219d5b158d5",
   "lastOpenFiles": [
+    "leetcode/laioffer.md",
+    "leetcode/laroffer.md",
+    "leetcode/editor/cn/doc/content/[1926]迷宫中离入口最近的出口.md",
+    "leetcode/editor/cn/doc/content/[52]N皇后 II.md",
+    "README.md",
+    "leetcode/processed/[54]Spiral Matrix.md",
+    "leetcode/processed/[24]Swap Nodes in Pairs.md",
+    "leetcode/editor/cn/doc/content/[139]Word Break.md",
     "leetcode/processed/[剑指 Offer II 038]每日温度.md",
-    "leetcode/processed/[2130]Maximum Twin Sum of a Linked List.md",
-    "leetcode/processed/[2129]Capitalize the Title.md",
-    "leetcode/processed/[2100]Find Good Days to Rob the Bank.md",
-    "leetcode/processed/[2058]Find the Minimum and Maximum Number of Nodes Between Critical Points.md",
-    "leetcode/processed/[2057]Smallest Index With Equal Value.md",
-    "leetcode/processed/[1963]使字符串平衡的最小交换次数.md",
-    "leetcode/processed/[1962]移除石子使总数最小.md",
-    "leetcode/processed/[1961]检查字符串是否为数组前缀.md",
-    "leetcode/processed/[1926]Nearest Exit from Entrance in Maze.md"
+    "leetcode/processed/[2130]Maximum Twin Sum of a Linked List.md"
   ]
 }
