@@ -38,50 +38,51 @@ onepage的定义：***不是（是）什么？***
 ## probelms table
 
 ***tags***
-> 📌 #数学 #数组 #广度优先搜索 #栈 #链表 #设计 #字符串 #递归 #位运算 #贪心 #深度优先搜索 #图 #树
-#### Leetcode
-  
-   | Problem                                                                        | Tag   | popular |
-   | ------------------------------------------------------------------------------ | ----- | ------- |
-   | [[[1716]计算力扣银行的钱]]                                                     | #未知 | 23      |
-   | [[[1925]统计平方和三元组的数目]]                                               | #未知 | 3       |
-   | [[[1926]Nearest Exit from Entrance in Maze]]                                   | #未知 | 49      |
-   | [[[1961]检查字符串是否为数组前缀]]                                             | #未知 | 7       |
-   | [[[1962]移除石子使总数最小]]                                                   | #未知 | 67      |
-   | [[[1963]使字符串平衡的最小交换次数]]                                           | #未知 | 74      |
-   | [[[2057]Smallest Index With Equal Value]]                                      | #未知 | 97      |
-   | [[[2058]Find the Minimum and Maximum Number of Nodes Between Critical Points]] | #未知 | 52      |
-   | [[[206]反转链表]]                                                              | #未知 | 36      |
-   | [[[208]Implement Trie (Prefix Tree)]]                                          | #未知 | 0       |
-   | [[[2100]Find Good Days to Rob the Bank]]                                       | #未知 | 50      |
-   | [[[2129]Capitalize the Title]]                                                 | #未知 | 14      |
-   | [[[2130]Maximum Twin Sum of a Linked List]]                                    | #未知 | 77      |
-   | [[[237]删除链表中的节点]]                                                      | #未知 | 37      |
-   | [[[24]Swap Nodes in Pairs]]                                                    | #未知 | 60      |
-   | [[[263]Ugly Number]]                                                           | #未知 | 53      |
-   | [[[268]丢失的数字]]                                                            | #未知 | 90      |
-   | [[[316]Remove Duplicate Letters]]                                              | #未知 | 35      |
-   | [[[334]Increasing Triplet Subsequence]]                                        | #未知 | 94      |
-   | [[[496]Next Greater Element I]]                                                | #未知 | 15      |
-   | [[[504]Base 7]]                                                                | #未知 | 34      |
-   | [[[520]Detect Capital]]                                                        | #未知 | 36      |
-   | [[[523]Continuous Subarray Sum]]                                               | #未知 | 74      |
-   | [[[547]Number of Provinces]]                                                   | #未知 | 78      |
-   | [[[54]Spiral Matrix]]                                                          | #未知 | 24      |
-   | [[[581]最短无序连续子数组]]                                                    | #未知 | 51      |
-   | [[[649]Dota2 Senate]]                                                          | #未知 | 73      |
-   | [[[67]Add Binary]]                                                             | #未知 | 46      |
-   | [[[716]Max Stack]]                                                             | #未知 | 58      |
-   | [[[71]Simplify Path]]                                                          | #未知 | 35      |
-   | [[[739]Daily Temperatures]]                                                    | #未知 | 1       |
-   | [[[747]Largest Number At Least Twice of Others]]                               | #未知 | 87      |
-   | [[[787]Cheapest Flights Within K Stops]]                                       | #未知 | 97      |
-   | [[[79]Word Search]]                                                            | #未知 | 85      |
-   | [[[904]Fruit Into Baskets]]                                                    | #未知 | 67      |
-   | [[[958]Check Completeness of a Binary Tree]]                                   | #未知 | 74      |
-   | [[[997]Find the Town Judge]]                                                   | #未知 | 9       |
-   | [[[剑指 Offer II 038]每日温度]]                                                | #未知 | 74      |
+> 📌 #广度优先搜索 #数学 #数组 #链表 #递归 #字符串 #栈 #设计 #贪心 #位运算 #深度优先搜索 #树 #图
 
+#### Leetcode
+            
+| Problem                                                                        | Tag                                                                    | popular |
+| ------------------------------------------------------------------------------ | ---------------------------------------------------------------------- | ------- |
+| [[[206]反转链表]]                                                              | #递归  #链表                                                           | 2187    |
+| [[[24]Swap Nodes in Pairs]]                                                    | #递归  #链表                                                           | 1212    |
+| [[[79]Word Search]]                                                            | #数组  #回溯  #矩阵                                                    | 1154    |
+| [[[237]删除链表中的节点]]                                                      | #链表                                                                  | 1081    |
+| [[[208]Implement Trie (Prefix Tree)]]                                          | #设计  #字典树  #哈希表  #字符串                                       | 1026    |
+| [[[739]Daily Temperatures]]                                                    | #栈  #数组  #单调栈                                                    | 988     |
+| [[[54]Spiral Matrix]]                                                          | #数组  #矩阵  #模拟                                                    | 967     |
+| [[[581]最短无序连续子数组]]                                                    | #栈  #贪心  #数组  #双指针  #排序  #单调栈                             | 766     |
+| [[[67]Add Binary]]                                                             | #位运算  #数学  #字符串  #模拟                                         | 732     |
+| [[[547]Number of Provinces]]                                                   | #深度优先搜索  #广度优先搜索  #并查集  #图                             | 689     |
+| [[[316]Remove Duplicate Letters]]                                              | #栈  #贪心  #字符串  #单调栈                                           | 643     |
+| [[[496]Next Greater Element I]]                                                | #栈  #数组  #哈希表  #单调栈                                           | 626     |
+| [[[268]丢失的数字]]                                                            | #位运算  #数组  #哈希表  #数学  #排序                                  | 548     |
+| [[[334]Increasing Triplet Subsequence]]                                        | #贪心  #数组                                                           | 452     |
+| [[[71]Simplify Path]]                                                          | #栈  #字符串                                                           | 441     |
+| [[[787]Cheapest Flights Within K Stops]]                                       | #深度优先搜索  #广度优先搜索  #图  #动态规划  #最短路  #堆（优先队列） | 438     |
+| [[[523]Continuous Subarray Sum]]                                               | #数组  #哈希表  #数学  #前缀和                                         | 396     |
+| [[[263]Ugly Number]]                                                           | #数学                                                                  | 299     |
+| [[[997]Find the Town Judge]]                                                   | #图  #数组  #哈希表                                                    | 232     |
+| [[[649]Dota2 Senate]]                                                          | #贪心  #队列  #字符串                                                  | 229     |
+| [[[520]Detect Capital]]                                                        | #字符串                                                                | 196     |
+| [[[958]Check Completeness of a Binary Tree]]                                   | #树  #广度优先搜索  #二叉树                                            | 169     |
+| [[[904]Fruit Into Baskets]]                                                    | #数组  #哈希表  #滑动窗口                                              | 147     |
+| [[[504]Base 7]]                                                                | #数学                                                                  | 114     |
+| [[[747]Largest Number At Least Twice of Others]]                               | #数组  #排序                                                           | 114     |
+| [[[716]Max Stack]]                                                             | #栈  #设计  #链表  #双向链表  #有序集合                                | 90      |
+| [[[1716]计算力扣银行的钱]]                                                     | #数学                                                                  | 35      |
+| [[[1963]使字符串平衡的最小交换次数]]                                           | #栈  #贪心  #双指针  #字符串                                           | 27      |
+| [[[剑指 Offer II 038]每日温度]]                                                | #栈  #数组  #单调栈                                                    | 22      |
+| [[[1962]移除石子使总数最小]]                                                   | #数组  #堆（优先队列）                                                 | 12      |
+| [[[2100]Find Good Days to Rob the Bank]]                                       | #数组  #动态规划  #前缀和                                              | 9       |
+| [[[1926]Nearest Exit from Entrance in Maze]]                                   | #广度优先搜索  #数组  #矩阵                                            | 8       |
+| [[[1925]统计平方和三元组的数目]]                                               | #数学  #枚举                                                           | 7       |
+| [[[1961]检查字符串是否为数组前缀]]                                             | #数组  #字符串                                                         | 7       |
+| [[[2058]Find the Minimum and Maximum Number of Nodes Between Critical Points]] | #链表                                                                  | 6       |
+| [[[2057]Smallest Index With Equal Value]]                                      | #数组                                                                  | 3       |
+| [[[2130]Maximum Twin Sum of a Linked List]]                                    | #栈  #链表  #双指针                                                    | 3       |
+| [[[2129]Capitalize the Title]]                                                 | #字符串                                                                | 1       |
+            
 #### AC-wing
 
 基本出自 USACO、codefocus
@@ -160,6 +161,38 @@ onepage的定义：***不是（是）什么？***
 | [860. lemonade-change](https://leetcode-cn.com/problems/lemonade-change/)                                                          | #greedy                              | [[455. assign-cookies]]        |              |     |     |     |
 | [[283. 移动零]]                                                                                                                    |                                      |                                |              |     |     |     |
 | [2101. Detonate the Maximum Bombs](https://leetcode-cn.com/problems/detonate-the-maximum-bombs/)                                   |                                      |                                |              |     |     |     |
+ch #two-pointer #有问题  | [[704. Binary Search]]         |              |     |     |     |
+| [860. lemonade-change](https://leetcode-cn.com/problems/lemonade-change/)                        | #greedy | [[455. assign-cookies]] |     |     |     |     |
+| ------------------------------------------------------------------------------------------------ | ------- | ----------------------- | --- | --- | --- | --- |
+| [[283. 移动零]]                                                                                  |         |                         |     |     |     |     |
+| [2101. Detonate the Maximum Bombs](https://leetcode-cn.com/problems/detonate-the-maximum-bombs/) |         |                         |     |     |     |     |
+ems/grumpy-bookstore-owner/)                                                 | #two-pointer #sliding-window #greedy |                                |              |     |     |     |
+| [189. Rotate Array](https://leetcode-cn.com/problems/rotate-array/)                                         | #技巧 #two-pointer                  | 反转数组                |     |     |     |     |
+| ----------------------------------------------------------------------------------------------------------- | ----------------------------------- | ----------------------- | --- | --- | --- | --- |
+| [977. Squares of a Sorted Array](https://leetcode-cn.com/problems/squares-of-a-sorted-array/)               | #two-pointer                        | 对向而行                |     |     |     |     |
+| [1051 高度检查器](https://leetcode-cn.com/problems/height-checker/)                                         | #sort                               |                         |     |     |     |     |
+| [35. Search Insert Position](https://leetcode-cn.com/problems/search-insert-position/)                      | #binary-search #细节                | 初始化边界              |     |     |     |     |
+| [278. First Bad Version](https://leetcode-cn.com/problems/first-bad-version/)                               | #binary-search                      | 后续处理                |     |     |     |     |
+| [167. two-sum-ii-input-array-is-sorted](https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/) | #binary-search #two-pointer #有问题 | [[704. Binary Search]]  |     |     |     |     |
+| [860. lemonade-change](https://leetcode-cn.com/problems/lemonade-change/)                                   | #greedy                             | [[455. assign-cookies]] |     |     |     |     |
+| [[283. 移动零]]                                                                                             |                                     |                         |     |     |     |     |
+| [2101. Detonate the Maximum Bombs](https://leetcode-cn.com/problems/detonate-the-maximum-bombs/)            |                                     |                         |     |     |     |     |
+ch #two-pointer #有问题  | [[704. Binary Search]]         |              |     |     |     |
+| [860. lemonade-change](https://leetcode-cn.com/problems/lemonade-change/)                        | #greedy | [[455. assign-cookies]] |     |     |     |     |
+| ------------------------------------------------------------------------------------------------ | ------- | ----------------------- | --- | --- | --- | --- |
+| [[283. 移动零]]                                                                                  |         |                         |     |     |     |     |
+| [2101. Detonate the Maximum Bombs](https://leetcode-cn.com/problems/detonate-the-maximum-bombs/) |         |                         |     |     |     |     |
+ms/grumpy-bookstore-owner/)                                                 | #two-pointer #sliding-window #greedy |                                |              |     |     |     |
+| [189. Rotate Array](https://leetcode-cn.com/problems/rotate-array/)                                         | #技巧 #two-pointer                  | 反转数组                |     |     |     |     |
+| ----------------------------------------------------------------------------------------------------------- | ----------------------------------- | ----------------------- | --- | --- | --- | --- |
+| [977. Squares of a Sorted Array](https://leetcode-cn.com/problems/squares-of-a-sorted-array/)               | #two-pointer                        | 对向而行                |     |     |     |     |
+| [1051 高度检查器](https://leetcode-cn.com/problems/height-checker/)                                         | #sort                               |                         |     |     |     |     |
+| [35. Search Insert Position](https://leetcode-cn.com/problems/search-insert-position/)                      | #binary-search #细节                | 初始化边界              |     |     |     |     |
+| [278. First Bad Version](https://leetcode-cn.com/problems/first-bad-version/)                               | #binary-search                      | 后续处理                |     |     |     |     |
+| [167. two-sum-ii-input-array-is-sorted](https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/) | #binary-search #two-pointer #有问题 | [[704. Binary Search]]  |     |     |     |     |
+| [860. lemonade-change](https://leetcode-cn.com/problems/lemonade-change/)                                   | #greedy                             | [[455. assign-cookies]] |     |     |     |     |
+| [[283. 移动零]]                                                                                             |                                     |                         |     |     |     |     |
+| [2101. Detonate the Maximum Bombs](https://leetcode-cn.com/problems/detonate-the-maximum-bombs/)            |                                     |                         |     |     |     |     |
 ch #two-pointer #有问题  | [[704. Binary Search]]         |              |     |     |     |
 | [860. lemonade-change](https://leetcode-cn.com/problems/lemonade-change/)                        | #greedy | [[455. assign-cookies]] |     |     |     |     |
 | ------------------------------------------------------------------------------------------------ | ------- | ----------------------- | --- | --- | --- | --- |

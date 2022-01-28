@@ -98,11 +98,11 @@ function replaceTags(tags, filePath = path_README) {
         let result = data.replace(data.substring(data.indexOf(`***tags***`), data.indexOf(`#### Leetcode`)),
             `***tags***
 > 📌 ${tags.map(t => `#${t}`).join(' ')}
+
 `
         );
         fs.writeFile(filePath, result, 'utf8', function (err, data) {
             if (err) return console.log(err);
-            console.log(`???`)
         });
     });
 }
