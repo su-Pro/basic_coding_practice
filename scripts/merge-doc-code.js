@@ -2,6 +2,9 @@ import fs, { promises as fsPromises } from "fs";
 import path from "path";
 import _ from "lodash";
 
+const lang = "py";
+// const lang = 'js'
+const codeStart = lang === "py" ? "class" : "function";
 const mkdWorkDir = "leetcode/editor/cn/doc/content";
 const codeWorkDir = "leetcode/editor/cn/";
 const flag_codeStart =
@@ -10,7 +13,8 @@ const flag_codeEnd =
   "# leetcode submit region end(Prohibit modification and deletion)";
 
 const outPuthDir = "leetcode/processed";
-async function doInterersction() {
+
+async function pickBothExistFileList() {
   const [mkdFileNames, codeFileNames] = await Promise.all(
     [mkdWorkDir, codeWorkDir].map((_p) =>
       fsPromises
@@ -27,15 +31,20 @@ async function doMergedFileContent(name) {
       .replace(flag_codeStart, markStart)
       .replace(flag_codeEnd, markend);
 
-    const start = markedCode.lastIndexOf("class");
+    const start = markedCode.lastIndexOf(codeStart);
     return markedCode.substring(start, markedCode.lastIndexOf(";"));
   }
+
   function joinContents(code, mkd) {
     return (
       mkd +
       ` 
 <br>
 <strong> solution: </strong>
+
+\`\`\`javascript
+input your code
+\`\`\`
 
 \`\`\`python3
 ${code}
@@ -45,7 +54,7 @@ ${code}
   }
 
   const [mkdContents, codeContents] = await Promise.all(
-    [".md", ".py"].map((_e) =>
+    [".md", lang].map((_e) =>
       fsPromises
         .readFile(
           path.resolve(_e === ".md" ? mkdWorkDir : codeWorkDir, name + _e)
@@ -67,14 +76,15 @@ function doOutputFile(content, fileName) {
 }
 
 async function main() {
-  const interersctionFileList = await (await doInterersction()).sort();
-  for (const fName of interersctionFileList) {
+  const fileNameList = (await pickBothExistFileList()).sort();
+  for (const fName of fileNameList) {
     const f = await doMergedFileContent(fName);
     doOutputFile(f, fName);
   }
-  for (const fName of interersctionFileList) {
+  // 删除对应文件
+  for (const fName of fileNameList) {
     fs.unlink(path.resolve(mkdWorkDir + `/${fName}.md`), (e, v) => {});
-    fs.unlink(path.resolve(codeWorkDir + `/${fName}.py`), (e, v) => {});
+    fs.unlink(path.resolve(codeWorkDir + `/${fName}.${lang}`), (e, v) => {});
   }
 }
 

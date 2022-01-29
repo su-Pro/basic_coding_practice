@@ -38,6 +38,16 @@
 <br>
 <strong> solution: </strong>
 
+1.
+2.
+3.
+
+
+```js
+
+```
+
+
 ```python3
 class Solution:
     def increasingTriplet(self, nums: List[int]) -> bool:
