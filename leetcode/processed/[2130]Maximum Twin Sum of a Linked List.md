@@ -48,22 +48,34 @@ There is only one node with a twin in the linked list having twin sum of 1 + 100
 	<li>The number of nodes in the list is an <strong>even</strong> integer in the range <code>[2, 10<sup>5</sup>]</code>.</li>
 	<li><code>1 &lt;= Node.val &lt;= 10<sup>5</sup></code></li>
 </ul>
-<div><div>Related Topics</div><div><li>栈</li><li>链表</li><li>双指针</li></div></div><br><div><li>👍 3</li><li>👎 0</li></div> 
+<div><div>Related Topics</div><div><li>栈</li><li>链表</li><li>双指针</li></div></div><br><div><li>👍 5</li><li>👎 0</li></div> 
 <br>
 <strong> solution: </strong>
+
+```javascript
+input your code
+```
 
 ```python3
 class Solution:
     def pairSum(self, head: Optional[ListNode]) -> int:
-        head_list = []
-        n = len(head_list)
-        m_val = 0
-        while head is not None:
-            head_list.append(head.val)
+        stk1, stk2 = [], []
+
+        # 把链表值顺序压入stk1
+        while head:
+            stk1.append(head.val)
             head = head.next
-        for i in range(n // 2):
-            m_val = max(m_val,head_list[i] + head_list[n - i - 1])
-        return m_val
+
+        # 对半分给stk2
+        for _ in range(len(stk1) // 2):
+            stk2.append(stk1.pop())
+
+        # 打擂台，找到最大值
+        max_ret = 0
+        for _ in range(len(stk1)):
+            max_ret = max(max_ret, stk1.pop() + stk2.pop())
+
+        return max_ret
 
 ```
   

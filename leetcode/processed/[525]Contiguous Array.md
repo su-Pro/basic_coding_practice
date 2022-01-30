@@ -24,4 +24,31 @@
 	<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>nums[i]</code> is either <code>0</code> or <code>1</code>.</li>
 </ul>
-<div><div>Related Topics</div><div><li>数组</li><li>哈希表</li><li>前缀和</li></div></div><br><div><li>👍 511</li><li>👎 0</li></div>
+<div><div>Related Topics</div><div><li>数组</li><li>哈希表</li><li>前缀和</li></div></div><br><div><li>👍 511</li><li>👎 0</li></div> 
+<br>
+<strong> solution: </strong>
+
+```javascript
+input your code
+```
+
+```python3
+class Solution:
+    def findMaxLength(self, nums: List[int]) -> int:
+        dp, ret, cnt_zero, cnt_one = {}, 0, 0, 0
+        dp[0] = 0
+        for i in range(1, len(nums) + 1):
+            current_v = nums[i - 1]
+            if current_v == 0:
+                cnt_zero += 1
+            else:
+                cnt_one += 1
+            c = cnt_one - cnt_zero
+            if c in dp:
+                ret = max(ret, i - dp[c])
+            else:
+                dp[c] = i
+        return ret
+
+```
+  
