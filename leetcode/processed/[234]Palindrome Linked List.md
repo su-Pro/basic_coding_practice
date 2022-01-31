@@ -29,7 +29,28 @@
 <strong> solution: </strong>
 
 ```javascript
-input your code
+var isPalindrome = function (head) {
+  // 这个函数如果是判断一个string是不是回文字符串 那么从中间开始往两边用两个指针不断移动，并且
+  // 相互比较值的大小就行了
+  // 链表如果要比较就从第一个元素和最后一个元素开始比对
+  // 如果将链表值全部copy至stack 那么之后再一个一个pop 就可以将链表从后往前迭代了。
+
+  const stack = new Stack();
+  // 由于我们不想要修改head的指向 因此我们新建一个节点 之后对链表进行遍历
+  let dummyHead = head;
+  while (dummyHead) {
+    stack.push(dummyHead.val);
+    dummyHead = dummyHead.next;
+  }
+  while (head.next) {
+    if (head.val !== stack.peek()) {
+      return false;
+    }
+    stack.pop();
+    head = head.next;
+  }
+  return true;
+};
 ```
 
 ```python3
@@ -54,4 +75,3 @@ class Solution:
         return True
 
 ```
-  

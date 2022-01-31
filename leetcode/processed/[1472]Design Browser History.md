@@ -48,7 +48,60 @@ browserHistory.back(7);                   // You are in &quot;google.com&quot;, 
 <strong> solution: </strong>
 
 ```javascript
-input your code
+/**
+ * @param {string} homepage
+ */
+class BrowserHistory {
+  constructor(homepage) {
+    this.backStack = new Stack();
+    this.forwardStack = new Stack();
+    this.backStack.push(homepage);
+  }
+  /**
+   * @param {string} url
+   * @return {void}
+   */
+  visit(url) {
+    while (!this.forwardStack.isEmpty()) {
+      this.forwardStack.pop();
+    }
+    this.backStack.push(url);
+  }
+  /**
+   * @param {number} steps
+   * @return {string}
+   */
+  back(steps) {
+    for (let i = 0; i < steps; i++) {
+      if (this.backStack.length() === 1) {
+        return this.backStack.peek();
+      }
+      this.forwardStack.push(this.backStack.pop());
+    }
+    return this.backStack.peek();
+  }
+  /**
+   * @param {number} steps
+   * @return {string}
+   */
+  forward(steps) {
+    for (let i = 0; i < steps; i++) {
+      if (this.forwardStack.isEmpty()) {
+        break;
+      }
+      this.backStack.push(this.forwardStack.pop());
+    }
+    return this.backStack.peek();
+  }
+}
+
+/**
+ * Your BrowserHistory object will be instantiated and called as such:
+ * var obj = new BrowserHistory(homepage)
+ * obj.visit(url)
+ * var param_2 = obj.back(steps)
+ * var param_3 = obj.forward(steps)
+ */
 ```
 
 ```python3
@@ -87,4 +140,3 @@ class BrowserHistory:
 # param_3 = obj.forward(steps)
 
 ```
-  

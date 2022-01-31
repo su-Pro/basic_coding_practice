@@ -49,7 +49,38 @@
 <strong> solution: </strong>
 
 ```javascript
-input your code
+var evalRPN = function (tokens) {
+  // 这道题其实更多的是考验程序编写能力
+  // all operators "+", "-", "*", "/".
+  const stack = new Stack();
+  for (let i = 0; i < tokens.length; i++) {
+    const num = Number(tokens[i]);
+    if (!Number.isNaN(num)) {
+      stack.push(num);
+      continue;
+    }
+    const num1 = stack.pop();
+    const num2 = stack.pop();
+    switch (tokens[i]) {
+      case "+":
+        stack.push(num2 + num1);
+        break;
+      case "-":
+        stack.push(num2 - num1);
+        break;
+      case "*":
+        stack.push(num2 * num1);
+        break;
+      case "/":
+        // 这里的取整逻辑比较坑
+        stack.push(
+          num2 / num1 > 0 ? Math.floor(num2 / num1) : Math.ceil(num2 / num1)
+        );
+        break;
+    }
+  }
+  return stack.pop();
+};
 ```
 
 ```python3
@@ -68,4 +99,3 @@ class Solution:
         return stk[-1]
 
 ```
-  

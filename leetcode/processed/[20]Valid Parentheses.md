@@ -41,7 +41,39 @@
 <strong> solution: </strong>
 
 ```javascript
-input your code
+/**
+  Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+
+  An input string is valid if:
+  Open brackets must be closed by the same type of brackets.
+  Open brackets must be closed in the correct order.
+ */
+function isValid(str) {
+  /**
+   * 思路：维护一个栈 栈内需要push入紧接着需要进行配对的符号
+   * 例如： '([' 从左到右遍历数组时 需要先把'('塞入栈内，之后再塞入'['。
+   *         如果下一个迭代的词刚好能和栈顶的词能match上 那么栈顶部元素可以pop了。
+   */
+  if (str.length === 0) {
+    return true;
+  }
+  const charactersMap = {
+    "(": ")",
+    "{": "}",
+    "[": "]",
+  };
+  const arr = str.split("");
+  const stack = new Stack();
+  stack.push(arr[0]);
+  for (let i = 1; i < arr.length; i++) {
+    if (charactersMap[stack.peek()] === arr[i]) {
+      stack.pop();
+    } else {
+      stack.push(arr[i]);
+    }
+  }
+  return stack.length() === 0;
+}
 ```
 
 ```python3
@@ -65,6 +97,5 @@ class Solution:
             else:
                 stk.append(ch)
         return len(stk) is 0
-    
+
 ```
-  
