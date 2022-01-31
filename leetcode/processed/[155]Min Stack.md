@@ -45,7 +45,110 @@ minStack.getMin(); // return -2
 <strong> solution: </strong>
 
 ```javascript
-input your code
+class MinStack {
+  /**
+   * 思路：stack1是实际的栈内容 在stack2中维护和stack1等高的栈
+   * stack2中每n元素对应 stack1中前n个元素中最小值
+   * f2(n) = f1_min(x) x = [1, n]
+   */
+  constructor() {
+    this.stack1 = new Stack();
+    // 第二个stack记录当前栈内最小值。
+    this.stack2 = new Stack();
+  }
+
+  push(num) {
+    this.stack1.push(num);
+    if (this.stack2.isEmpty() || this.stack2.peek() > num) {
+      this.stack2.push(num);
+    } else {
+      this.stack2.push(this.stack2.peek());
+    }
+  }
+
+  top() {
+    if (this.stack1.isEmpty()) {
+      return null;
+    }
+    return this.stack1.peek();
+  }
+
+  pop() {
+    if (this.stack1.isEmpty()) {
+      return null;
+    }
+    this.stack2.pop();
+    return this.stack1.pop();
+  }
+
+  getMin() {
+    return this.stack2.peek();
+  }
+}
+
+/** ------------------------------------------------------ **/
+
+class Element {
+  constructor(val) {
+    this.val = val;
+    this.size = 1;
+  }
+
+  updateSize(size) {
+    this.size = size;
+  }
+}
+
+class MinStack2 {
+  /**
+   * 思路：stack1是实际的栈内容
+   * 考虑到维护一个和stack1等高的栈太耗费内存 因此维护一个包含有出现次数的栈
+   * stack2中每n元素对应 stack1中前n个元素中最小值
+   * f2(n) = f1_min(x) x = [1, n]
+   */
+  constructor() {
+    this.stack1 = new Stack();
+    // 第二个stack记录当前栈内最小值。
+    this.stack2 = new Stack();
+  }
+
+  push(num) {
+    this.stack1.push(num);
+    if (this.stack2.isEmpty() || this.stack2.peek().val > num) {
+      this.stack2.push(new Element(num));
+    } else {
+      const curMin = this.stack2.pop();
+      curMin.updateSize(curMin.size + 1);
+      this.stack2.push(curMin);
+    }
+  }
+
+  top() {
+    if (this.stack1.isEmpty()) {
+      return null;
+    }
+    return this.stack1.peek();
+  }
+
+  pop() {
+    if (this.stack1.isEmpty()) {
+      return null;
+    }
+    const curMin = this.stack2.pop();
+    if (curMin.size > 1) {
+      curMin.updateSize(curMin.size - 1);
+      this.stack2.push(curMin);
+    }
+    return this.stack1.pop();
+  }
+
+  getMin() {
+    if (this.stack2.isEmpty()) {
+      return null;
+    }
+    return this.stack2.peek().val;
+  }
+}
 ```
 
 ```python3
@@ -114,4 +217,3 @@ class FollUpMinStack:
 # param_4 = obj.getMin()
 
 ```
-  

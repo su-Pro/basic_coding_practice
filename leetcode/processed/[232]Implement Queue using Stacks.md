@@ -51,7 +51,110 @@ myQueue.empty(); // return false
 <strong> solution: </strong>
 
 ```javascript
-input your code
+class QueueImpelementedByStak {
+  constructor() {
+    // stack1 作为缓存栈 接受所有的输入
+    this.stack1 = new Stack();
+    // stack2 中元素经过“左右导右手” 就可以将最先进入栈的元素置顶到栈顶
+    this.stack2 = new Stack();
+  }
+
+  push(num) {
+    this.stack1.push(num);
+  }
+
+  pop() {
+    if (this.empty()) {
+      return;
+    }
+    if (this.stack2.isEmpty()) {
+      this.wrap();
+    }
+    return this.stack2.pop();
+  }
+
+  peek() {
+    if (this.empty()) {
+      return;
+    }
+    if (this.stack2.isEmpty()) {
+      this.wrap();
+    }
+    return this.stack2.peek();
+  }
+
+  wrap() {
+    // 执行“左手导右手”操作
+    while (!this.stack1.isEmpty()) {
+      this.stack2.push(this.stack1.pop());
+    }
+  }
+
+  empty() {
+    return this.stack1.isEmpty() && this.stack2.isEmpty();
+  }
+}
+
+/** ------------------------------------------------------ **/
+/**
+ * 其实两个stack就可以模拟dequeue
+ * 因为两个stack可以成为一个queue 并且stack可以pop 也可以push 这不就是一个dequeue了吗
+ * 但问题是在一个栈空了 再进行pop时 必须得把另外一个栈全部压进来 严重影响性能。
+ * 怎么样才能避免把全部栈都压过去？
+ */
+class DeQueueWithThreeStack {
+  constructor() {
+    this.stackL = new Stack();
+    this.stackR = new Stack();
+    this.bufferStack = new Stack();
+  }
+
+  leftPush(elem) {
+    this.stackL.push(elem);
+  }
+  rightPush(elem) {
+    this.stackR.push(elem);
+  }
+  leftPop() {
+    if (this.stackL.isEmpty()) {
+      if (this.stackR.isEmpty()) {
+        return null;
+      }
+      const halfLenth = Math.floor(this.stackR.length() / 2);
+      // 在左右导右手的过程当中 bufferStack 作为缓冲buffer接受stackR前一半栈内元素
+      // 剩下的底部一半 就导到stackL了
+      // 最后导入完 再把bufferStack中的元素归位 就可以成功的把一个fullStack切为一半一半了
+      while (this.stackR.length() >= halfLenth) {
+        this.bufferStack.push(this.stackR.pop());
+      }
+      while (!this.stackR.isEmpty()) {
+        this.stackL.push(this.stackR.pop());
+      }
+      while (!this.bufferStack.isEmpty()) {
+        this.stackR.push(this.bufferStack.pop());
+      }
+    }
+    return this.stackL.pop();
+  }
+  rightPop() {
+    if (this.stackR.isEmpty()) {
+      if (this.stackL.isEmpty()) {
+        return null;
+      }
+      const halfLenth = Math.floor(this.stackL.length() / 2);
+      while (this.stackL.length() >= halfLenth) {
+        this.bufferStack.push(this.stackL.pop());
+      }
+      while (!this.stackL.isEmpty()) {
+        this.stackR.push(this.stackL.pop());
+      }
+      while (!this.bufferStack.isEmpty()) {
+        this.stackL.push(this.bufferStack.pop());
+      }
+    }
+    return this.stackR.pop();
+  }
+}
 ```
 
 ```python3
@@ -87,6 +190,5 @@ class MyQueue:
             # param_2 = obj.pop()
             # param_3 = obj.peek()
             # param_4 = obj.empty()
-            
+
 ```
-  
