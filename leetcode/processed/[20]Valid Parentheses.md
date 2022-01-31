@@ -51,8 +51,9 @@
 function isValid(str) {
   /**
    * 思路：维护一个栈 栈内需要push入紧接着需要进行配对的符号
-   * 例如： '([' 从左到右遍历数组时 需要先把'('塞入栈内，之后再塞入'['。
-   *         如果下一个迭代的词刚好能和栈顶的词能match上 那么栈顶部元素可以pop了。
+   * 例如：'([' 从左到右遍历数组时 需要先把'('塞入栈内，之后再塞入'['。
+   *      如果下一个迭代的词刚好能和栈顶的词能match上 那么栈顶部元素可以pop了。
+   *      在整个迭代结束之前 如果栈是空的状态下先压入的是 ')','}',']' 这几个元素 那么我们可以提前结束迭代。
    */
   if (str.length === 0) {
     return true;
@@ -66,6 +67,10 @@ function isValid(str) {
   const stack = new Stack();
   stack.push(arr[0]);
   for (let i = 1; i < arr.length; i++) {
+    if (stack.length() === 0 && [')','}',']'].includes(arr[i])) {
+      // 这里栈空了 其实我们可以提前结束
+	  return false;
+	}
     if (charactersMap[stack.peek()] === arr[i]) {
       stack.pop();
     } else {

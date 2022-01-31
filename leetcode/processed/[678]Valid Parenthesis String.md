@@ -32,7 +32,59 @@
 <strong> solution: </strong>
 
 ```javascript
-input your code
+/**
+ * @param {string} s
+ * @return {boolean}
+ */
+var checkValidString = function (s) {
+  /**
+   * 思路：字符串中可能会出现'('，'*'，')'。
+   * 不能单纯的使用一个栈来存储。
+   * 再审一遍题目，从题目中可知：
+   *     '*'可以被视为单个右括号 ) ，或单个左括号 ( ，或一个空字符串
+   *     '*'可以有一个也可能是接连着出现很多个。"(**))"
+   * 那么我们可以不可以用多个栈来解决这个问题？
+   *
+   * '('存一个栈，'*'存另外一个栈。之后再循环迭代
+   */
+  let stack1 = new Stack();
+  let stack2 = new Stack();
+  for (let i = 0; i < s.length; i++) {
+    switch (s[i]) {
+      case "(":
+        // 注意⚠️ 这里应该把下标传递进去 后续会需要
+        stack1.push(i);
+        break;
+      case "*":
+        // 注意⚠️ 这里应该把下标传递进去 后续会需要
+        stack2.push(i);
+        break;
+      case ")":
+        if (stack1.length() === 0 && stack2.length() === 0) {
+          // 栈空了 提前结束
+          return false;
+        }
+        if (stack1.length()) {
+          stack1.pop();
+        } else {
+          stack2.pop();
+        }
+        break;
+    }
+  }
+  // stack1中的'('可以和'*'匹配 因此把它们匹配一遍
+  /**
+   * 注意⚠️ 这里*号必须出现在'('之后
+   */
+  while (!stack1.isEmpty() && !stack2.isEmpty()) {
+    const index1 = stack1.pop();
+    const index2 = stack2.pop();
+    if (index1 >= index2) {
+      return false;
+    }
+  }
+  return stack1.length() === 0;
+};
 ```
 
 ```python3
@@ -65,4 +117,3 @@ class Solution:
         return i < 0
 
 ```
-  
