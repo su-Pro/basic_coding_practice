@@ -37,7 +37,19 @@
 <strong> solution: </strong>
 
 ```javascript
-input your code
+var preorderTraversal = function (root) {
+  const res = [];
+  function preorder(node) {
+    if (!node) {
+      return;
+    }
+    res.push(node.val);
+    preorder(node.left);
+    preorder(node.right);
+  }
+  preorder(root);
+  return res;
+};
 ```
 
 ```python3
@@ -56,4 +68,3 @@ class Solution:
         return ret
 
 ```
-  

@@ -53,7 +53,25 @@ There is only one node with a twin in the linked list having twin sum of 1 + 100
 <strong> solution: </strong>
 
 ```javascript
-input your code
+var pairSum = function (head) {
+  // 做法和回文字符串的做法一样 通过一次便利将内容压入栈中，再依次抛出和链表进行逐个对比。
+  let dummyHead = head;
+  const stack = [];
+  while (dummyHead) {
+    stack.push(dummyHead.val);
+    dummyHead = dummyHead.next;
+  }
+  let curMax = head.val + stack.pop();
+  head = head.next;
+  while (head) {
+    if (head.val + stack[stack.length - 1] > curMax) {
+      curMax = head.val + stack[stack.length - 1];
+    }
+    stack.pop();
+    head = head.next;
+  }
+  return curMax;
+};
 ```
 
 ```python3
@@ -78,4 +96,3 @@ class Solution:
         return max_ret
 
 ```
-  

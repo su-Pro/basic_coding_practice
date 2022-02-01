@@ -50,6 +50,27 @@
 <br>
 <strong> solution: </strong>
 
+```js
+/**
+ * @param {string} path
+ * @return {string}
+ */
+var simplifyPath = function (path) {
+  const stack = [];
+  for (const name of path.split("/")) {
+    if (name === "..") {
+      if (stack.length) {
+        stack.pop();
+      }
+    } else if (name.length && name !== ".") {
+      stack.push(name);
+    }
+  }
+
+  return "/" + stack.join("/");
+};
+```
+
 ```python3
 class Solution:
     def simplifyPath(self, path: str) -> str:
@@ -66,4 +87,3 @@ class Solution:
 
 
 ```
-  

@@ -42,7 +42,52 @@
 <strong> solution: </strong>
 
 ```javascript
-input your code
+var asteroidCollision = function (asteroids) {
+  /**
+   * 思路整理：
+   * 1. 如果当前元素大于0 则当前元素压入栈
+   *
+   * 如果当前元素小于0：
+   * 2. 栈内顶部元素小于0 则当前元素压入栈
+   * 3. 栈内顶部元素大于0  【while栈非空 栈内顶部元素大于0】
+   *    3.1 栈内顶部元素 < 当前元素绝对值：栈pop元素
+   *    3.2 栈内顶部元素 === 当前元素绝对值：栈pop元素 结束循环
+   *    3.3 栈内顶部元素 > 当前元素绝对值：结束循环
+   */
+  if (!asteroids.length) {
+    return [];
+  }
+  const stack = [asteroids[0]];
+  for (let i = 1; i < asteroids.length; i++) {
+    if (asteroids[i] > 0) {
+      stack.push(asteroids[i]);
+    } else {
+      if (stack[stack.length - 1] < 0) {
+        stack.push(asteroids[i]);
+      } else {
+        // 这个地方有点恶心 得记录到底是break出来了还是最终有一个行星一路炸到了头
+        let breaked = false;
+        while (stack.length && stack[stack.length - 1] > 0) {
+          if (stack[stack.length - 1] < -asteroids[i]) {
+            stack.pop();
+            continue;
+          } else if (stack[stack.length - 1] === -asteroids[i]) {
+            stack.pop();
+            breaked = true;
+            break;
+          } else {
+            breaked = true;
+            break;
+          }
+        }
+        if (!breaked) {
+          stack.push(asteroids[i]);
+        }
+      }
+    }
+  }
+  return stack;
+};
 ```
 
 ```python3
@@ -67,4 +112,3 @@ class Solution:
         return stk
 
 ```
-  

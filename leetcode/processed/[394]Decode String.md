@@ -42,7 +42,33 @@
 <strong> solution: </strong>
 
 ```javascript
-input your code
+var decodeString = function (s) {
+  // 思路：嵌套的运算符特点是计算完内部括号里的之后，会回过头再计算括号外的。
+  // 这个结构其实就是很符合栈的不断往回头看的特性。
+
+  /**
+   * 和逆波兰表达式不一样的是 我们最终的计算结果并不是在stack中累积起来的。
+   * 是要放回到tempStr中的。
+   */
+  const stack = [];
+  let tempStr = "";
+  let counter = 0;
+  for (let i = 0; i < s.length; i++) {
+    if (Number.isInteger(Number(s[i]))) {
+      counter = counter * 10 + Number(s[i]);
+    } else if (s[i] === "[") {
+      stack.push(counter);
+      stack.push(tempStr);
+      counter = 0;
+      tempStr = "";
+    } else if (s[i] === "]") {
+      tempStr = stack.pop() + tempStr.repeat(stack.pop());
+    } else {
+      tempStr += s[i];
+    }
+  }
+  return tempStr;
+};
 ```
 
 ```python3
@@ -67,4 +93,3 @@ class Solution:
         return temp_str
 
 ```
-  
