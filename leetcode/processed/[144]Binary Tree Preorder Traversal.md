@@ -38,6 +38,7 @@
 
 ```javascript
 var preorderTraversal = function (root) {
+  // 递归解
   const res = [];
   function preorder(node) {
     if (!node) {
@@ -48,6 +49,32 @@ var preorderTraversal = function (root) {
     preorder(node.right);
   }
   preorder(root);
+  return res;
+};
+
+var preorderTraversal = function (root) {
+  if (!root) {
+    return [];
+  }
+  /**
+   * 迭代写法 迭代写法和递归写法中的调用栈不能一样，因为迭代总是在同一个代码块中执行。
+   */
+  // 这个代码报错 本地调试没有问题不知道问题出在哪
+  const res = [];
+  const stack = [];
+  stack.push(root);
+  while (stack.length) {
+    const top = stack.pop();
+    res.push(top.val);
+    if (top.left) {
+      stack.push(top.left);
+      continue;
+    }
+    if (top.right) {
+      stack.push(top.right);
+      continue;
+    }
+  }
   return res;
 };
 ```
