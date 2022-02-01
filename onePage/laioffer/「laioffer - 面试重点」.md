@@ -28,7 +28,7 @@
 	4. [1249. 移除无效的括号](https://leetcode-cn.com/problems/minimum-remove-to-make-valid-parentheses/)
 	
 
-### 高频练习
+### 练习
 
 | name | callback |
 | ---- | -------- |
@@ -44,3 +44,46 @@
 - [ ] [581. 最短无序连续子数组](https://leetcode-cn.com/problems/shortest-unsorted-continuous-subarray/)
 - [ ] 316
 - [ ] 853
+
+## 递归 - A:
+
+### 课程讲解
+
+1. https://leetcode-cn.com/problems/fibonacci-number/
+2. https://leetcode-cn.com/problems/powx-n/
+
+### 练习
+
+1. https://leetcode-cn.com/problems/power-of-two/
+2. https://leetcode-cn.com/problems/hanota-lcci/
+
+
+## 搜索 - DFS 暴搜
+
+### 练习
+
+ [473. 火柴拼正方形](https://leetcode-cn.com/problems/matchsticks-to-square/)
+ [37. 解数独](https://leetcode-cn.com/problems/sudoku-solver/)
+[51. N 皇后](https://leetcode-cn.com/problems/n-queens/)
+ [52. N皇后 II](https://leetcode-cn.com/problems/n-queens-ii/)
+[1197. 进击的骑士](https://leetcode-cn.com/problems/minimum-knight-moves/)
+ [216. 组合总和 III](https://leetcode-cn.com/problems/combination-sum-iii/)
+ [90. 子集 II](https://leetcode-cn.com/problems/subsets-ii/)
+ [78. 子集](https://leetcode-cn.com/problems/subsets/)
+ [47. 全排列 II](https://leetcode-cn.com/problems/permutations-ii/)
+ [46. 全排列](https://leetcode-cn.com/problems/permutations/)
+ [17. 电话号码的字母组合](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/)
+ [464. 我能赢吗](https://leetcode-cn.com/problems/can-i-win/)
+ [79. 单词搜索](https://leetcode-cn.com/problems/word-search/)
+ [756. 金字塔转换矩阵](https://leetcode-cn.com/problems/pyramid-transition-matrix/)
+ [341. 扁平化嵌套列表迭代器](https://leetcode-cn.com/problems/flatten-nested-list-iterator/)
+ [394. 字符串解码](https://leetcode-cn.com/problems/decode-string/)
+ [95. 不同的二叉搜索树 II](https://leetcode-cn.com/problems/unique-binary-search-trees-ii/)
+ [96. 不同的二叉搜索树](https://leetcode-cn.com/problems/unique-binary-search-trees/)
+ [241. 为运算表达式设计优先级](https://leetcode-cn.com/problems/different-ways-to-add-parentheses/)
+ [93. 复原 IP 地址](https://leetcode-cn.com/problems/restore-ip-addresses/)
+ [257. 二叉树的所有路径](https://leetcode-cn.com/problems/binary-tree-paths/)
+ [77. 组合](https://leetcode-cn.com/problems/combinations/)
+ [39. 组合总和](https://leetcode-cn.com/problems/combination-sum/)
+ [784. 字母大小写全排列](https://leetcode-cn.com/problems/letter-case-permutation/)
+ [1087. 花括号展开](https://leetcode-cn.com/problems/brace-expansion/)
