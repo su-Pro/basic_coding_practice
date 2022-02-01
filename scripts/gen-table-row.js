@@ -49,7 +49,7 @@ class FileBasic {
       .getElementsByTagName("li")
       .map((tag) => tag.innerHTML)
       .slice(0, -1);
-
+    if (target.length === 0) return
     const tags = target.slice(0, -1);
     const popular = target.slice(-1)[0];
     this.tag = tags.map((tag) => `#${tag} `).join(" ");

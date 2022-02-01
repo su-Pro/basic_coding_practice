@@ -49,13 +49,14 @@
 
 ### 课程讲解
 
-1. https://leetcode-cn.com/problems/fibonacci-number/
-2. https://leetcode-cn.com/problems/powx-n/
+1. [[[509]Fibonacci Number]]
+2. [[[50]Pow(x, n)]]
 
 ### 练习
 
-1. https://leetcode-cn.com/problems/power-of-two/
-2. https://leetcode-cn.com/problems/hanota-lcci/
+1. [[[231]Power of Two]]
+2. [[[342]Power of Four]]
+3. [[[面试题 08.06]Hanota LCCI]]
 
 
 ## 搜索 - DFS 暴搜
