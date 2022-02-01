@@ -36,7 +36,28 @@
 <strong> solution: </strong>
 
 ```javascript
-input your code
+var myPow = function (x, n) {
+  function pow(x, n) {
+    if (n === 0) {
+      return 1;
+    }
+    // 最直接的方案是 myPow(x, n-1) * x
+    /**
+     * 将问题通过二分法来解决 往往能极大的降低时间复杂度
+     * 不一定非要除以2，还可以除以3或者更大的数字 例如10。
+     * 但带来的问题是需要处理的case就比较多了。一般二分法基本足够了。
+     */
+    const halfResult = myPow(x, Math.floor(n / 2));
+    return n % 2 === 1 ? halfResult * halfResult * x : halfResult * halfResult;
+  }
+  // 不能一股脑的直接乘 因为n有可能为负数 这时候需要做个简单的数学变换就可以了。
+  // x^(-2) = 1/x^2
+  return n > 0 ? pow(x, n) : 1 / pow(x, -n);
+};
+/**
+ * Time = O(log(n))
+ * Space = O(log(n))
+ */
 ```
 
 ```python3
@@ -62,4 +83,3 @@ class Solution:
         return 1 / quickPow(x, -n) if n < 0 else quickPow(x, n)
 
 ```
-  

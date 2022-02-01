@@ -26,7 +26,23 @@
 <strong> solution: </strong>
 
 ```javascript
-input your code
+var isPowerOfFour = function (n) {
+  /**
+   * ⚠️ 这里有一个有意思的地方 不要写反了判断顺序 判断顺序很重要
+   * 得先判断是不是basecase 再判断是不是不符合条件之类的
+   */
+  // 如果n为1 则走到头了是2的幂
+  if (n === 1) {
+    return true;
+  }
+  // base case
+  // 如果n为0 n除以4余数不为零 则不是4的幂
+  if (n === 0 || n % 4 !== 0) {
+    return false;
+  }
+
+  return isPowerOfFour(n / 4);
+};
 ```
 
 ```python3
@@ -38,4 +54,3 @@ class Solution:
         return self.isPowerOfFour(n // 4)
 
 ```
-  

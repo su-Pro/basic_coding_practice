@@ -39,7 +39,18 @@
 <strong> solution: </strong>
 
 ```javascript
-input your code
+function isPowerOfTwo(n) {
+  // base case
+  // 如果n为0 n除以2余数不为零 则不是2的幂
+  if (n === 0 || n % 2 !== 0) {
+    return false;
+  }
+  // 如果n为1 则走到头了是2的幂
+  if (n === 1) {
+    return true;
+  }
+  return isPowerOfTwo(n / 2);
+}
 ```
 
 ```python3
@@ -54,4 +65,3 @@ class Solution:
 
 
 ```
-  

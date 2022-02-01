@@ -43,7 +43,24 @@ F(n) = F(n - 1) + F(n - 2), for n &gt; 1.
 <strong> solution: </strong>
 
 ```javascript
-input your code
+const hashmap = new Map();
+var fib = function (n) {
+  // base case
+  if (n === 0) {
+    return 0;
+  }
+  if (n === 1) {
+    return 1;
+  }
+  // 因为这个recursion出现了两个分叉，因此会自然的会有多个重复计算的问题。
+  // 例如 f(4) = f(3) + f(2)  f(5) = f(4) + f(3)
+  // 因此利用一个hashmap进行存储 避免重复计算。
+  if (hashmap.has(n)) {
+    return hashmap.get(n);
+  }
+  hashmap.set(n, fib(n - 1) + fib(n - 2));
+  return hashmap.get(n);
+};
 ```
 
 ```python3
@@ -74,4 +91,3 @@ F(3) 是重复计算,我们要记录以及计算过的值。
         return self.memo[n]
 
 ```
-  
