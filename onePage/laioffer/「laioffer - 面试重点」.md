@@ -4,14 +4,14 @@
 
 ### 课程讲解
 
-1. [ ] 三栈排序***(后面和排序一起，4同理)***
+1. [x] 三栈排序***(后面和排序一起，4同理)***
 2. [[[232]Implement Queue using Stacks]]
 3. [[[155]Min Stack]]
-4. [ ] 双栈排序
+4. [x] 双栈排序
 
-- 性质1：
+- 性质1：先进后出 进出栈顺序颠倒 压栈相当于记录历史
 - 性质2：递归过程模拟
-[[性质总结 from 乔]]
+[[栈性质总结]]
 
 ***课外补充***
 
@@ -32,11 +32,11 @@
 
 | name                                        | callback         |
 | ------------------------------------------- | ---------------- |
-| [[[678]Valid Parenthesis String]]           |                  |
+| [[[678]Valid Parenthesis String]]           | 性质1 & 回文检查  |
 | [[[71]Simplify Path]]                       | 性质1            |
-| [[[2130]Maximum Twin Sum of a Linked List]] | 性质2 & 回文检查 |
-| [[[394]Decode String]]                      | 性质1            |
-| [[[144]Binary Tree Preorder Traversal]]     | 性质2            |
+| [[[2130]Maximum Twin Sum of a Linked List]] | 性质2 & 回文检查  |
+| [[[394]Decode String]]                      | 性质1 & 回文检查  |
+| [[[144]Binary Tree Preorder Traversal]]     | 性质2 & 栈模拟递归 |
 | [[[735]Asteroid Collision]]                 | 性质1            |
 
 > ⬇️ 单调栈待整理
