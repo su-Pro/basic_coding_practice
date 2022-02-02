@@ -30,14 +30,14 @@
 
 ### 练习
 
-| name | callback |
-| ---- | -------- |
-|  [[[678]Valid Parenthesis String]]     |          |
-| [[[71]Simplify Path]]    |  性质1        |
-|  [[[2130]Maximum Twin Sum of a Linked List]]     | 性质2 & 回文检查          |
-|  [[[394]Decode String]]     |  性质1         |
-|  [[[144]Binary Tree Preorder Traversal]]     |  性质2         |
-|  [[[735]Asteroid Collision]]     |  性质1         |
+| name                                        | callback         |
+| ------------------------------------------- | ---------------- |
+| [[[678]Valid Parenthesis String]]           |                  |
+| [[[71]Simplify Path]]                       | 性质1            |
+| [[[2130]Maximum Twin Sum of a Linked List]] | 性质2 & 回文检查 |
+| [[[394]Decode String]]                      | 性质1            |
+| [[[144]Binary Tree Preorder Traversal]]     | 性质2            |
+| [[[735]Asteroid Collision]]                 | 性质1            |
 
 > ⬇️ 单调栈待整理
 
@@ -45,7 +45,8 @@
 - [ ] 316
 - [ ] 853
 
-## 递归 - A:
+
+## 递归 - A
 
 ### 课程讲解
 
@@ -54,9 +55,43 @@
 
 ### 练习
 
-1. [[[231]Power of Two]]
-2. [[[342]Power of Four]]
-3. [[[面试题 08.06]Hanota LCCI]]
+| name                              | callback |
+| --------------------------------- | -------- |
+| [[[231]Power of Two]]             |          |
+| [[[678]Valid Parenthesis String]] |          |
+| [[[342]Power of Four]]            |          |
+| [[[面试题 08.06]Hanota LCCI]]     |          |
+
+## link-node
+
+### 课程讲解
+
+1.  [206. 反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)
+
+### 练习
+
+| name                                                                               | callback |
+| ---------------------------------------------------------------------------------- | -------- |
+| [92. 反转链表 II](https://leetcode-cn.com/problems/reverse-linked-list-ii/)        |          |
+| [25. K 个一组翻转链表](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/) |          |
+
+
+## 递归 - B: tree
+
+### 课程讲解
+
+1. [144. 二叉树的前序遍历](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/)
+2. [101. 对称二叉树](https://leetcode-cn.com/problems/symmetric-tree/)
+3. [110. 平衡二叉树](https://leetcode-cn.com/problems/balanced-binary-tree/)
+4. [98. 验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree/)
+
+### 练习
+
+| name                                                                                      | callback |
+| ----------------------------------------------------------------------------------------- | -------- |
+| [226. 翻转二叉树](https://leetcode-cn.com/problems/invert-binary-tree/)                   |          |
+| [589. N 叉树的前序遍历](https://leetcode-cn.com/problems/n-ary-tree-preorder-traversal/)  |          |
+| [剑指 Offer 07. 重建二叉树](https://leetcode-cn.com/problems/zhong-jian-er-cha-shu-lcof/) |          |
 
 
 ## 搜索 - DFS 暴搜
