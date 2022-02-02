@@ -72,7 +72,7 @@
 
 | name                                                                               | callback |
 | ---------------------------------------------------------------------------------- | -------- |
-| [92. 反转链表 II](https://leetcode-cn.com/problems/reverse-linked-list-ii/)        |          |
+| [[[206]反转链表]]                                                                  |          |
 | [25. K 个一组翻转链表](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/) |          |
 
 
@@ -80,17 +80,18 @@
 
 ### 课程讲解
 
-1. [144. 二叉树的前序遍历](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/)
-2. [101. 对称二叉树](https://leetcode-cn.com/problems/symmetric-tree/)
-3. [110. 平衡二叉树](https://leetcode-cn.com/problems/balanced-binary-tree/)
-4. [98. 验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree/)
+1. [[[144]Binary Tree Preorder Traversal]]
+2. [[[101]Symmetric Tree]]
+3. [[[110]Balanced Binary Tree]]
+4. [[[98]Validate Binary Search Tree]]
+5. [[二叉堆]]
 
 ### 练习
 
 | name                                                                                      | callback |
 | ----------------------------------------------------------------------------------------- | -------- |
-| [226. 翻转二叉树](https://leetcode-cn.com/problems/invert-binary-tree/)                   |          |
-| [589. N 叉树的前序遍历](https://leetcode-cn.com/problems/n-ary-tree-preorder-traversal/)  |          |
+| [[[226]Invert Binary Tree]]                  |          |
+| [[[589]N-ary Tree Preorder Traversal]] |          |
 | [剑指 Offer 07. 重建二叉树](https://leetcode-cn.com/problems/zhong-jian-er-cha-shu-lcof/) |          |
 
 
