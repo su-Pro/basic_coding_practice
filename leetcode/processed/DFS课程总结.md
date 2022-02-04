@@ -1,10 +1,11 @@
-## DFS基本方法：
+## DFS 基本方法：
 
-1. what does it store on each level? (每层代表什么意义？一般来讲解题之前就知道DFS要recurse多少层)
+1. what does it store on each level? (每层代表什么意义？一般来讲解题之前就知道 DFS 要 recurse 多少层)
 
-2. how many different states should we try to put on this level? (每层有多少个状态/case需要try?)
+2. how many different states should we try to put on this level? (每层有多少个状态/case 需要 try?)
 
-### DFS经典例题1 Print all subsets of a set S = {'a', 'b', 'c'}
+### DFS 经典例题 1 Print all subsets of a set S = {'a', 'b', 'c'}
+
 ![](../imgs/DFS-find-all-subsets.png)
 
 ```js
@@ -45,11 +46,12 @@ function findAllSubsets(input) {
   subset(input, 0, "");
 }
 /**
-* Time: 2^n
-*/
+ * Time: 2^n
+ */
 ```
 
-### DFS经典例题2 ()()() find all valid permutation using the parenthesis provided.
+### DFS 经典例题 2 ()()() find all valid permutation using the parenthesis provided.
+
 ```js
 /**
  * @param {number} n 总共有“n对儿”符号需要加 总高度是2*n
@@ -84,8 +86,9 @@ function validPermutation(n, leftNum, rightNum, prefix) {
 }
 ```
 
-### DFS经典例题3 Print all combinations of coins that can sum up to a total value k.
-```js
+### DFS 经典例题 3 Print all combinations of coins that can sum up to a total value k.
+
+````js
 // DFS经典例题3 Print all combinations of coins that can sum up to a total value k.
 // E.g. total value k = 99cents.
 // coin value = 25 10 5 1 cent
@@ -144,6 +147,7 @@ function findCombination(money_left = 99, level = 0, result) {
 }```
 
 ### DFS经典例题4 given a string with no duplicated letters, how to print out all permutations of the string;
+
 ```js
 /**
  * string = 'abc'
@@ -198,4 +202,4 @@ function permutation2(input, index = 0) {
     swap(input, index, i);
   }
 }
-```
+````
