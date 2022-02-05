@@ -117,7 +117,7 @@
 [96. 不同的二叉搜索树](https://leetcode-cn.com/problems/unique-binary-search-trees/)
 [241. 为运算表达式设计优先级](https://leetcode-cn.com/problems/different-ways-to-add-parentheses/)
 [93. 复原 IP 地址](https://leetcode-cn.com/problems/restore-ip-addresses/)
-[257. 二叉树的所有路径](https://leetcode-cn.com/problems/binary-tree-paths/)
+[[[257]Binary Tree Paths]]
 [[[77]Combinations]]
 [[[39]Combination Sum]]
 [[[784]Letter Case Permutation]]
