@@ -203,3 +203,5 @@ function permutation2(input, index = 0) {
   }
 }
 ````
+
+subset问题和combination问题的本质都是一类问题，都是组合的思想。因此解决的思路也是一样的。
