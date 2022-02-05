@@ -17,59 +17,36 @@
 
 **_tags_**
 
-> 📌 #栈 #数学 #广度优先搜索 #数组 #设计 #链表 #递归 #字符串 #位运算 #贪心 #深度优先搜索 #树 #图
+> 📌 #栈 #undefined #数学 #广度优先搜索 #数组 #深度优先搜索 #设计 #链表 #递归 #字符串 #位运算 #贪心 #<code>1 &lt;= candidates.length &lt;= 30</code> #<code>1 &lt;= nums.length &lt;= 6</code> #The number of nodes in the tree is in the range <code>[0, 10<sup>4</sup>]</code>. #<code>1 &lt;= nums.length &lt;= 10</code> #The number of nodes in the list is <code>n</code>. #树 #The left subtree of a node contains only nodes with keys <strong>less than</strong> the node&#39;s key. #图
 
 #### Leetcode
             
 | Problem | Tag | popular |
     | --------- | --- | -------- |
+    | [[DFS课程总结]] |  | 0 |
+    | [[[101]Symmetric Tree]] |  | NaN |
+    | [[[110]Balanced Binary Tree]] |  | NaN |
     | [[[20]Valid Parentheses]] | #栈  #字符串  | 2934 |
     | [[[206]反转链表]] | #递归  #链表  | 2187 |
+    | [[[200]Number of Islands]] | #深度优先搜索  #广度优先搜索  #并查集  #数组  #矩阵  | 1525 |
     | [[[234]Palindrome Linked List]] | #栈  #递归  #链表  #双指针  | 1247 |
     | [[[24]Swap Nodes in Pairs]] | #递归  #链表  | 1219 |
     | [[[155]Min Stack]] | #栈  #设计  | 1154 |
-    | [[[79]Word Search]] | #数组  #回溯  #矩阵  | 1154 |
     | [[[237]删除链表中的节点]] | #链表  | 1081 |
     | [[[208]Implement Trie (Prefix Tree)]] | #设计  #字典树  #哈希表  #字符串  | 1026 |
     | [[[394]Decode String]] | #栈  #递归  #字符串  | 1015 |
-    | [[[739]Daily Temperatures]] | #栈  #数组  #单调栈  | 988 |
-    | [[[54]Spiral Matrix]] | #数组  #矩阵  #模拟  | 967 |
-    | [[[50]Pow(x, n)]] | #递归  #数学  | 854 |
-    | [[[581]最短无序连续子数组]] | #栈  #贪心  #数组  #双指针  #排序  #单调栈  | 766 |
-    | [[[67]Add Binary]] | #位运算  #数学  #字符串  #模拟  | 732 |
     | [[[144]Binary Tree Preorder Traversal]] | #栈  #树  #深度优先搜索  #二叉树  | 723 |
-    | [[[547]Number of Provinces]] | #深度优先搜索  #广度优先搜索  #并查集  #图  | 689 |
     | [[[316]Remove Duplicate Letters]] | #栈  #贪心  #字符串  #单调栈  | 643 |
-    | [[[496]Next Greater Element I]] | #栈  #数组  #哈希表  #单调栈  | 626 |
     | [[[268]丢失的数字]] | #位运算  #数组  #哈希表  #数学  #排序  | 548 |
     | [[[232]Implement Queue using Stacks]] | #栈  #设计  #队列  | 546 |
-    | [[[525]Contiguous Array]] | #数组  #哈希表  #前缀和  | 511 |
-    | [[[912]Sort an Array]] | #数组  #分治  #桶排序  #计数排序  #基数排序  #排序  #堆（优先队列）  #归并排序  | 468 |
     | [[[231]Power of Two]] | #位运算  #递归  #数学  | 457 |
     | [[[150]Evaluate Reverse Polish Notation]] | #栈  #数组  #数学  | 455 |
     | [[[334]Increasing Triplet Subsequence]] | #贪心  #数组  | 452 |
-    | [[[678]Valid Parenthesis String]] | #栈  #贪心  #字符串  #动态规划  | 443 |
-    | [[[71]Simplify Path]] | #栈  #字符串  | 441 |
-    | [[[787]Cheapest Flights Within K Stops]] | #深度优先搜索  #广度优先搜索  #图  #动态规划  #最短路  #堆（优先队列）  | 438 |
-    | [[[523]Continuous Subarray Sum]] | #数组  #哈希表  #数学  #前缀和  | 396 |
-    | [[[509]Fibonacci Number]] | #递归  #记忆化搜索  #数学  #动态规划  | 392 |
     | [[[263]Ugly Number]] | #数学  | 299 |
     | [[[342]Power of Four]] | #位运算  #递归  #数学  | 286 |
-    | [[[524]Longest Word in Dictionary through Deleting]] | #数组  #双指针  #字符串  #排序  | 286 |
-    | [[[997]Find the Town Judge]] | #图  #数组  #哈希表  | 232 |
-    | [[[649]Dota2 Senate]] | #贪心  #队列  #字符串  | 229 |
-    | [[[735]Asteroid Collision]] | #栈  #数组  | 211 |
-    | [[[520]Detect Capital]] | #字符串  | 196 |
-    | [[[958]Check Completeness of a Binary Tree]] | #树  #广度优先搜索  #二叉树  | 169 |
-    | [[[904]Fruit Into Baskets]] | #数组  #哈希表  #滑动窗口  | 147 |
-    | [[[面试题 08.06]Hanota LCCI]] | #递归  #数组  | 129 |
-    | [[[504]Base 7]] | #数学  | 114 |
-    | [[[747]Largest Number At Least Twice of Others]] | #数组  #排序  | 114 |
-    | [[[716]Max Stack]] | #栈  #设计  #链表  #双向链表  #有序集合  | 90 |
     | [[[1472]Design Browser History]] | #栈  #设计  #数组  #链表  #数据流  #双向链表  | 42 |
     | [[[1716]计算力扣银行的钱]] | #数学  | 35 |
     | [[[1963]使字符串平衡的最小交换次数]] | #栈  #贪心  #双指针  #字符串  | 27 |
-    | [[[剑指 Offer II 038]每日温度]] | #栈  #数组  #单调栈  | 22 |
     | [[[1962]移除石子使总数最小]] | #数组  #堆（优先队列）  | 12 |
     | [[[2100]Find Good Days to Rob the Bank]] | #数组  #动态规划  #前缀和  | 9 |
     | [[[1926]Nearest Exit from Entrance in Maze]] | #广度优先搜索  #数组  #矩阵  | 8 |
@@ -77,8 +54,53 @@
     | [[[1961]检查字符串是否为数组前缀]] | #数组  #字符串  | 7 |
     | [[[2058]Find the Minimum and Maximum Number of Nodes Between Critical Points]] | #链表  | 6 |
     | [[[2130]Maximum Twin Sum of a Linked List]] | #栈  #链表  #双指针  | 5 |
+    | [[[2154]Keep Multiplying Found Values by Two]] | #数组  #哈希表  #排序  #模拟  | 4 |
     | [[[2057]Smallest Index With Equal Value]] | #数组  | 3 |
     | [[[2129]Capitalize the Title]] | #字符串  | 1 |
+    | [[[17]Letter Combinations of a Phone Number]] |  | 0 |
+    | [[[226]Invert Binary Tree]] |  | NaN |
+    | [[[257]Binary Tree Paths]] |  | NaN |
+    | [[[39]Combination Sum]] | #<code>1 &lt;= candidates.length &lt;= 30</code>  #<code>1 &lt;= candidates[i] &lt;= 200</code>  | NaN |
+    | [[[46]Permutations]] | #<code>1 &lt;= nums.length &lt;= 6</code>  | NaN |
+    | [[[47]Permutations II]] |  | NaN |
+    | [[[51]N-Queens]] | #数组  #回溯  | 1164 |
+    | [[[79]Word Search]] | #数组  #回溯  #矩阵  | 1154 |
+    | [[[739]Daily Temperatures]] | #栈  #数组  #单调栈  | 988 |
+    | [[[54]Spiral Matrix]] | #数组  #矩阵  #模拟  | 967 |
+    | [[[50]Pow(x, n)]] | #递归  #数学  | 854 |
+    | [[[581]最短无序连续子数组]] | #栈  #贪心  #数组  #双指针  #排序  #单调栈  | 766 |
+    | [[[67]Add Binary]] | #位运算  #数学  #字符串  #模拟  | 732 |
+    | [[[547]Number of Provinces]] | #深度优先搜索  #广度优先搜索  #并查集  #图  | 689 |
+    | [[[496]Next Greater Element I]] | #栈  #数组  #哈希表  #单调栈  | 626 |
+    | [[[525]Contiguous Array]] | #数组  #哈希表  #前缀和  | 511 |
+    | [[[912]Sort an Array]] | #数组  #分治  #桶排序  #计数排序  #基数排序  #排序  #堆（优先队列）  #归并排序  | 468 |
+    | [[[678]Valid Parenthesis String]] | #栈  #贪心  #字符串  #动态规划  | 443 |
+    | [[[71]Simplify Path]] | #栈  #字符串  | 441 |
+    | [[[787]Cheapest Flights Within K Stops]] | #深度优先搜索  #广度优先搜索  #图  #动态规划  #最短路  #堆（优先队列）  | 438 |
+    | [[[523]Continuous Subarray Sum]] | #数组  #哈希表  #数学  #前缀和  | 396 |
+    | [[[509]Fibonacci Number]] | #递归  #记忆化搜索  #数学  #动态规划  | 392 |
+    | [[[524]Longest Word in Dictionary through Deleting]] | #数组  #双指针  #字符串  #排序  | 286 |
+    | [[[997]Find the Town Judge]] | #图  #数组  #哈希表  | 232 |
+    | [[[649]Dota2 Senate]] | #贪心  #队列  #字符串  | 229 |
+    | [[[735]Asteroid Collision]] | #栈  #数组  | 211 |
+    | [[[520]Detect Capital]] | #字符串  | 196 |
+    | [[[504]Base 7]] | #数学  | 114 |
+    | [[[589]N-ary Tree Preorder Traversal]] | #The number of nodes in the tree is in the range <code>[0, 10<sup>4</sup>]</code>.  | NaN |
+    | [[[958]Check Completeness of a Binary Tree]] | #树  #广度优先搜索  #二叉树  | 169 |
+    | [[[747]Largest Number At Least Twice of Others]] | #数组  #排序  | 114 |
+    | [[[716]Max Stack]] | #栈  #设计  #链表  #双向链表  #有序集合  | 90 |
+    | [[[77]Combinations]] |  | NaN |
+    | [[[784]Letter Case Permutation]] |  | NaN |
+    | [[[78]Subsets]] | #<code>1 &lt;= nums.length &lt;= 10</code>  | NaN |
+    | [[[904]Fruit Into Baskets]] | #数组  #哈希表  #滑动窗口  | 147 |
+    | [[[90]Subsets II]] |  | NaN |
+    | [[[92]Reverse Linked List II]] | #The number of nodes in the list is <code>n</code>.  #<code>1 &lt;= n &lt;= 500</code>  | NaN |
+    | [[[98]Validate Binary Search Tree]] | #The left subtree of a node contains only nodes with keys <strong>less than</strong> the node&#39;s key.  #The right subtree of a node contains only nodes with keys <strong>greater than</strong> the node&#39;s key.  #Both the left and right subtrees must also be binary search trees.  | NaN |
+    | [[[面试题 08.06]Hanota LCCI]] | #递归  #数组  | 129 |
+    | [[[剑指 Offer II 038]每日温度]] | #栈  #数组  #单调栈  | 22 |
+    | [[二叉堆]] |  | 0 |
+    | [[二叉搜索树]] |  | 0 |
+    | [[二叉解析树]] |  | 0 |
     | [[栈排序]] |  | 0 |
 #### AC-wing
 

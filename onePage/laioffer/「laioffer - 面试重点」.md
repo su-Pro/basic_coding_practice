@@ -93,32 +93,18 @@
 | [[[589]N-ary Tree Preorder Traversal]]                                                    |          |
 | [剑指 Offer 07. 重建二叉树](https://leetcode-cn.com/problems/zhong-jian-er-cha-shu-lcof/) |          |
 
-## 搜索 - DFS 暴搜
+
+## 递归 - C: DFS 暴搜
+
+> 把课上你做完的DFS部分重新链接上吧～
 
 ### 练习
 
-[473. 火柴拼正方形](https://leetcode-cn.com/problems/matchsticks-to-square/)
-[37. 解数独](https://leetcode-cn.com/problems/sudoku-solver/)
-[51. N 皇后](https://leetcode-cn.com/problems/n-queens/)
-[52. N 皇后 II](https://leetcode-cn.com/problems/n-queens-ii/)
-[1197. 进击的骑士](https://leetcode-cn.com/problems/minimum-knight-moves/)
-[216. 组合总和 III](https://leetcode-cn.com/problems/combination-sum-iii/)
-[[[90]Subsets II]]
-[[[78]Subsets]]
-[[[47]Permutations II]]
-[[[46]Permutations]]
-[[[17]Letter Combinations of a Phone Number]]
-[464. 我能赢吗](https://leetcode-cn.com/problems/can-i-win/)
-[79. 单词搜索](https://leetcode-cn.com/problems/word-search/)
-[756. 金字塔转换矩阵](https://leetcode-cn.com/problems/pyramid-transition-matrix/)
-[341. 扁平化嵌套列表迭代器](https://leetcode-cn.com/problems/flatten-nested-list-iterator/)
-[394. 字符串解码](https://leetcode-cn.com/problems/decode-string/)
-[95. 不同的二叉搜索树 II](https://leetcode-cn.com/problems/unique-binary-search-trees-ii/)
-[96. 不同的二叉搜索树](https://leetcode-cn.com/problems/unique-binary-search-trees/)
-[241. 为运算表达式设计优先级](https://leetcode-cn.com/problems/different-ways-to-add-parentheses/)
-[93. 复原 IP 地址](https://leetcode-cn.com/problems/restore-ip-addresses/)
-[[[257]Binary Tree Paths]]
-[[[77]Combinations]]
-[[[39]Combination Sum]]
-[[[784]Letter Case Permutation]]
-[1087. 花括号展开](https://leetcode-cn.com/problems/brace-expansion/)
+| name                                                                                      | callback |
+| ----------------------------------------------------------------------------------------- | -------- |
+| [[[17]Letter Combinations of a Phone Number]]                                                               |          |
+| [[[46]Permutations]]                                             |          |
+| [[[200]Number of Islands]] |          |
+| [[[47]Permutations II]] |          |
+
+
