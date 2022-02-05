@@ -65,3 +65,45 @@ var permute = function (nums) {
   return result;
 };
 ```
+```python3
+class Solution:
+    # def permute(self, nums: List[int]) -> List[List[int]]:
+    #     ret, l_input = [], len(nums)
+    #
+    #     def dfs(level: int):
+    #         if level == l_input:
+    #             ret.append(nums[:])
+    #             return
+    #
+    #         for i in range(level, l_input):
+    #             nums[level], nums[i] = nums[i], nums[level]
+    #             dfs(level + 1)
+    #             nums[level], nums[i] = nums[i], nums[level]
+    #
+    #     dfs(0)
+    #     return ret
+
+    # 更通用的DFS做法
+    def permute(self, nums: List[int]) -> List[List[int]]:
+        ret, l_input, visted = [], len(nums) + 1, dict((v, False) for v in nums)
+
+        def dfs(level: int, path: List[int]):
+            if level is l_input:
+                ret.append(path.copy())
+                return
+
+            for v in visted:
+                if visted[v]: continue
+
+                path.append(v)
+                visted[v] = True
+
+                dfs(level + 1, path)
+
+                path.pop()
+                visted[v] = False
+
+        dfs(1, [])
+        return ret
+
+```

@@ -33,7 +33,6 @@
 	<li><code>0 &lt;= digits.length &lt;= 4</code></li>
 	<li><code>digits[i]</code> is a digit in the range <code>[&#39;2&#39;, &#39;9&#39;]</code>.</li>
 </ul>
-<div><div>Related Topics</div><div><li>哈希表</li><li>字符串</li><li>回溯</li></div></div><br><div><li>👍 1701</li><li>👎 0</li></div>
 
 ```js
 const characterMap = {
@@ -79,4 +78,37 @@ var letterCombinations = function (digits) {
   }
   return recursiveCombination(digits, 0, "");
 };
+```
+
+```python3
+class Solution:
+    def letterCombinations(self, digits: str) -> List[str]:
+        if not digits: return []
+
+        digit_map = {
+            '2': 'abc',
+            '3': 'def',
+            '4': 'ghi',
+            '5': 'jkl',
+            '6': 'mno',
+            '7': 'pqrs',
+            '8': 'tuv',
+            '9': 'wxyz'
+        }
+
+        ans, path = [], []
+
+        def dfs(level: int):
+            if level == len(digits):
+                ans.append(''.join(path))
+                return
+
+            for letter in digit_map[digits[level]]:
+                path.append(letter)
+                dfs(level + 1)
+                path.pop()
+
+        dfs(0)
+        return ans
+
 ```

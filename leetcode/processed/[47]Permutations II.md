@@ -69,3 +69,29 @@ var permuteUnique = function (nums) {
   return result;
 };
 ```
+
+```python3
+class Solution:
+    def permuteUnique(self, nums: List[int]) -> List[List[int]]:
+        n = len(nums)
+        ans, path, st = [], nums.copy(), [False] * n
+        nums = sorted(nums)
+
+        def dfs(h, start):
+            if h == n:
+                ans.append(path.copy())
+
+            for i in range(start, n):
+                if st[i]: continue
+                st[i] = True
+                # 轮流来坐庄
+                path[i] = nums[h]
+                # 确保相同层不会用到相同元素来坐庄
+                dfs(h + 1, i + 1 if h + 1 < n and nums[h + 1] == nums[h] else 0)
+                st[i] = False
+
+        dfs(0, 0)
+        return ans
+
+
+```
