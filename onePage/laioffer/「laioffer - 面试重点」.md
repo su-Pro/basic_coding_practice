@@ -81,9 +81,10 @@
 
 1. [[[144]Binary Tree Preorder Traversal]]
 2. [[[101]Symmetric Tree]]
-3. [[[110]Balanced Binary Tree]]
-4. [[[98]Validate Binary Search Tree]]
-5. [[二叉堆]]
+3. [[[104]Maximum Depth of Binary Tree]]
+4. [[[110]Balanced Binary Tree]]
+5. [[[98]Validate Binary Search Tree]]
+6. [[二叉堆]]
 
 ### 练习
 
