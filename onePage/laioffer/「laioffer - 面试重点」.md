@@ -100,11 +100,10 @@
 
 ### 练习
 
-| name                                                                                      | callback |
-| ----------------------------------------------------------------------------------------- | -------- |
-| [[[17]Letter Combinations of a Phone Number]]                                                               |          |
-| [[[46]Permutations]]                                             |          |
-| [[[200]Number of Islands]] |          |
-| [[[47]Permutations II]] |          |
-
+| name                                          | callback | test |
+| --------------------------------------------- | -------- | ---- |
+| [[[17]Letter Combinations of a Phone Number]] |          |      |
+| [[[46]Permutations]]                          |          |      |
+| [[[200]Number of Islands]]                    |          |      |
+| [[[47]Permutations II]]                       |          |      |
 
