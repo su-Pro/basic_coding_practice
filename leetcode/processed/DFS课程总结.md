@@ -186,6 +186,18 @@ function permutation(toPermutateLetters, permutatedLetters = "") {
     permutation(toPermudate, `${permutatedLetters}${toPermutateLetters[i]}`);
   }
 }
+function permutation3(input, answer, used, level) {
+  if (level === input.size()) {
+    console.log(answer);
+  }
+  for (let i = lebel; i < input.length; i++) {
+    answer += input[i];
+    used[i] = true;
+    permutation3(input, answer, used, level + 1);
+    used[i] = false;
+    answer = answer.slice(0, answer.length - 1);
+  }
+}
 
 function swap(str, i, j) {
   [str[i], str[j]] = [str[j], str[i]];
