@@ -144,7 +144,8 @@ function findCombination(money_left = 99, level = 0, result) {
     result[level] = i;
     findCombination(money_left - coin[level] * i, level + 1, result);
   }
-}```
+}
+```
 
 ### DFS经典例题4 given a string with no duplicated letters, how to print out all permutations of the string;
 
@@ -185,6 +186,18 @@ function permutation(toPermutateLetters, permutatedLetters = "") {
     permutation(toPermudate, `${permutatedLetters}${toPermutateLetters[i]}`);
   }
 }
+function permutation3(input, answer, used, level) {
+  if (level === input.size()) {
+    console.log(answer);
+  }
+  for (let i = lebel; i < input.length; i++) {
+    answer += input[i];
+    used[i] = true;
+    permutation3(input, answer, used, level + 1);
+    used[i] = false;
+    answer = answer.slice(0, answer.length - 1);
+  }
+}
 
 function swap(str, i, j) {
   [str[i], str[j]] = [str[j], str[i]];
@@ -204,4 +217,4 @@ function permutation2(input, index = 0) {
 }
 ````
 
-subset问题和combination问题的本质都是一类问题，都是组合的思想。因此解决的思路也是一样的。
+subset 问题和 combination 问题的本质都是一类问题，都是组合的思想。因此解决的思路也是一样的。
