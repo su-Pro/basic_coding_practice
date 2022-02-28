@@ -98,6 +98,15 @@
 
 ### 练习
 
+<<<<<<< HEAD
+| name                                          | callback | test |
+| --------------------------------------------- | -------- | ---- |
+| [[[17]Letter Combinations of a Phone Number]] |          |      |
+| [[[46]Permutations]]                          |          |      |
+| [[[200]Number of Islands]]                    |          |      |
+| [[[47]Permutations II]]                       |          |      |
+
+=======
 | name                                                                                               | callback |
 | -------------------------------------------------------------------------------------------------- | -------- |
 | [[[78]Subsets]]                                                                                    |          |
@@ -126,3 +135,4 @@
 | [241. 为运算表达式设计优先级](https://leetcode-cn.com/problems/different-ways-to-add-parentheses/) |          |
 | [93. 复原 IP 地址](https://leetcode-cn.com/problems/restore-ip-addresses/)                         |          |
 | [1087. 花括号展开](https://leetcode-cn.com/problems/brace-expansion)                               |          |
+>>>>>>> 573b4358fa5b683c3a3bb75b5b717ac0fcf68730

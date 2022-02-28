@@ -41,4 +41,4 @@
 	<li><code>points[i].length == 2</code></li>
 	<li><code>-2<sup>31</sup> &lt;= x<sub>start</sub> &lt; x<sub>end</sub> &lt;= 2<sup>31</sup> - 1</code></li>
 </ul>
-<div><div>Related Topics</div><div><li>贪心</li><li>数组</li><li>排序</li></div></div><br><div><li>👍 526</li><li>👎 0</li></div>
+<div><div>Related Topics</div><div><li>贪心</li><li>数组</li><li>排序</li></div></div><br><div><li>👍 519</li><li>👎 0</li></div>
