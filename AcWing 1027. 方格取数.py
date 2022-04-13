@@ -8,11 +8,11 @@ while True:
     g[x - 1][y - 1] = v
 
 
-def memoSearch():
+def smartDp():
+
     pass
 
-
-def bruteForce():
+def memoSearch():
     f = [[
              [
                  [-1] * N for x in range(N)
@@ -40,7 +40,7 @@ def bruteForce():
         f[xa][ya][xb][yb] = ans
         return ans
 
-    print(dfs(0,0,0,0) + g[0][0])
+    print(dfs(0, 0, 0, 0) + g[0][0])
 
 
-bruteForce()
+memoSearch()

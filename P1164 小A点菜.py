@@ -1,10 +1,13 @@
-N = 105
+N, K = 105, 10010
+f = [[0] * K for x in range(N)]
 n, k = map(int, input().split())
-a = [0] + list(map(int, input().split()))
-f = [[0] * N for x in range(N)]
-
+a = []
+while not len(a) >= n:
+    t = [int(x) for x in input().split()]
+    a.extend(t)
+a.insert(0, 0)
 for i in range(1, n + 1):
-    for j in range(0, k + 1):
+    for j in range(1, k + 1):
         if j == a[i]:
             f[i][j] = f[i - 1][j] + 1
         elif j > a[i]:
