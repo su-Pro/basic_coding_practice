@@ -1,37 +1,39 @@
 import collections
+
 N, n = int(1e3 + 5), int(input())
-g, dist = [list(input().split())
-           for x in range(n)], [[-1] * N for x in range(N)]
+g, pre_state = [list(input().split())
+                for x in range(n)], [[-1] * N for x in range(N)]
 dx, dy = (-1, 1, 0, 0), (0, 0, -1, 1)
 
 
-def isOK(
-    x, y): return 0 <= x < n and 0 <= y < n and dist[x][y] == -1 and g[x][y] == '0'
-
-
-def forward_print():
-    x, y = n - 1, n - 1
-    path = []
-    while x != -1 and y != -1:
-        path.append((x, y))
-        x, y = dist[x][y]
-    for p in path[::-1]:
-        print(*p)
+def isok(x, y): return 0 <= x < n and 0 <= y < n and pre_state[x][y] == -1 and g[x][y] == '0'
 
 
 def bfs():
     que = collections.deque()
     que.append((0, 0))
-    dist[0][0] = (-1, -1)
+    pre_state[0][0] = (-1, -1)
+
     while que:
         x, y = que.popleft()
         for i in range(4):
-            nx, ny = x + dx[i], y + dy[i]
-            if not isOK(nx, ny):
-                continue
-            dist[nx][ny] = (x, y)
+            nx, ny = dx[i] + x, dy[i] + y
+            if not isok(nx, ny): continue
+            pre_state[nx][ny] = (x, y)
             que.append((nx, ny))
 
 
 bfs()
-forward_print()
+
+
+def custom_print():
+    path = []
+    x, y = n - 1, n - 1
+    while x != -1 and y != -1:
+        path.append((x, y))
+        x, y = pre_state[x][y]
+    for pos in path[::-1]:
+        print(*pos)
+
+
+custom_print()

@@ -1,26 +1,28 @@
 import collections
 
-N, M = 110, 110
-d = [[0] * M for x in range(N)]
+N = 105
 n, m = map(int, input().split())
-g = [list(map(int, input().split())) for x in range(n)]
-dx, dy = (-1, 0, 1, 0), (0, 1, 0, -1)
-
-isOk = lambda x, y: 0 <= x < n and 0 <= y < m and g[x][y] == 0 and d[x][y] == 0
+g, dist = [list(map(int, input().split())) for x in range(n)], [[-1] * N for x in range(N)]
+dx, dy = (-1, 1, 0, 0), (0, 0, -1, 1)
 
 
-def bfs(x, y):
+def isOK(x, y): return 0 <= x < n and 0 <= y < m and g[x][y] == 0 and dist[x][y] == -1
+
+
+def bfs():
     que = collections.deque()
-    que.append((x, y))
+    que.append((0, 0))
+    dist[0][0] = 0
+
     while que:
-        ux, uy = que.popleft()
+        x, y = que.popleft()
         for i in range(4):
-            vx, vy = ux + dx[i], uy + dy[i]
-            if isOk(vx, vy):
-                d[vx][vy] = d[ux][uy] + 1
-                que.append((vx, vy))
+            nx, ny = x + dx[i], y + dy[i]
+            if not isOK(nx, ny): continue
+            dist[nx][ny] = dist[x][y] + 1
+            que.append((nx, ny))
 
 
-bfs(0, 0)
+bfs()
 
-print(d[n - 1][m - 1])
+print(dist[n - 1][m - 1])

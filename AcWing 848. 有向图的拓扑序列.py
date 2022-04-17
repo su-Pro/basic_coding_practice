@@ -1,47 +1,45 @@
 import collections
 
 N = int(1e5 + 10)
-ipt = lambda: map(int, input().split())
-
-n, m = ipt()
-h, to_e, prev_ne, idx = [0] * N, [0] * N, [0] * N, 0
-deg, top_a = [0] * (n + 1), []
+h, e, ne, idx, in_deg = [0] * N, [0] * N, [0] * N, 0, [0] * N
+helper_ipt = lambda: map(int, input().split())
 
 
 def add(u, v):
     global idx
     idx += 1
-    to_e[idx] = v
-    prev_ne[idx] = h[u]
+    e[idx] = v
+    ne[idx] = h[u]
     h[u] = idx
 
+
+n, m = helper_ipt()
 for _ in range(m):
-    u, v = ipt()
+    u, v = helper_ipt()
     add(u, v)
-    deg[v] += 1
+    in_deg[v] += 1
+
 
 def bfs():
-    que = collections.deque()
-    # 1. 入度为0的点入度
+    que, top_sequence = collections.deque(), []
+    # 这里由于初始化in_deg长度是N，可以遍历所有图中的节点，来确保正确的初始化0入度点
     for i in range(1, n + 1):
-        if deg[i] != 0: continue
-        que.append(i)
+        if in_deg[i] == 0: que.append(i)
     while que:
         u_idx = que.popleft()
-        top_a.append(u_idx)
         u = h[u_idx]
+        top_sequence.append(u_idx)
         while u:
-            v = to_e[u]
-            deg[v] -= 1
-            if deg[v] == 0:
-                que.append(v)
-            u = prev_ne[u]
+            v = e[u]
+            u = ne[u]
+            in_deg[v] -= 1
+            if in_deg[v] == 0: que.append(v)
+    return top_sequence
 
 
-bfs()
+A = bfs()
 
-# 拓扑序的正确性在BFS的基础上，只要保证数量关系相等即可。
-if len(top_a) == n:
-    print(*top_a)
+if len(A) == n:
+    print(*A)
 else:
     print(-1)

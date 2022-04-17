@@ -16,9 +16,6 @@ def bfs():
     dist[0][0] = 0
     while que:
         tx, ty = que.popleft()
-        if st[tx][ty]:
-            continue
-        st[tx][ty] = True
         for i in range(4):
             nx, ny, gx, gy = tx + dx[i], ty + dy[i], tx + ix[i], ty + iy[i]
             # 分case 讨论
@@ -26,7 +23,8 @@ def bfs():
                 continue
             # 距离代价等同于，历史 + (是否需要旋转)
             d = dist[tx][ty] + (char_case[i] != g[gx][gy])
-            # 如果有可能更近,因为有的边权是0
+            # 如果有可能更近,才考虑更新
+            # 因为边权是0或1,因此有的点可能重复加入队
             if d >= dist[nx][ny]:
                 continue
             dist[nx][ny] = d
@@ -41,8 +39,7 @@ def bfs():
 while t:
     t -= 1
     n, m = map(int, input().split())
-    g, st, dist = [list(input()) for x in range(n)], [
-        [False] * N for x in range(N)], [[maxd] * N for x in range(N)]
+    g, dist = [list(input()) for x in range(n)], [[maxd] * N for x in range(N)]
     count = bfs()
     print(
         'NO SOLUTION' if count == maxd else count
