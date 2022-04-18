@@ -1,26 +1,28 @@
-N = 510
-n, m = map(int, input().split())
-g, d, vs = [[float('inf')] * N for i in range(N)], [float('inf')] * N, [0] * N
+def ipt_helper(): return map(int, input().split())
+
+
+N, M, d_max = 510, int(1e5 + 10), float('inf')
+dist, g_edges, vt = [d_max] * N, [[d_max] * N for x in range(N)], [False] * N
+n, m = ipt_helper()
 
 
 def dijkstra():
-    d[1] = 0
+    dist[1] = 0
     for _ in range(n):
-        x = 0
-        for j in range(1, n + 1):
-            if (not vs[j] and (x == 0 or d[x] > d[j])):
-                x = j
-        for y in range(1, n + 1):
-            d[y] = min(d[y], d[x] + g[x][y])
-        vs[x] = True
-
-    if d[n] == float('inf'):
-        return -1
-    return d[n]
+        u = 0
+        for _u in range(1, n + 1):
+            if not vt[_u] and (u == 0 or dist[u] > dist[_u]):
+                u = _u
+        for v in range(1, n + 1):
+            dist[v] = min(dist[v], dist[u] + g_edges[u][v])
+        vt[u] = True
+    return dist[n]
 
 
 for _ in range(m):
-    u, v, w = map(int, input().split())
-    g[u][v] = min(g[u][v], w)
+    u, v, z = ipt_helper()
+    g_edges[u][v] = min(g_edges[u][v], z)
 
-print(dijkstra())
+dist_n = dijkstra()
+
+print(-1 if dist_n == d_max else dist_n)
