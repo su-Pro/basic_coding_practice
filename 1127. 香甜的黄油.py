@@ -1,6 +1,6 @@
 import collections
 N, M, D = 800 + 5, 1450 + 5, float('inf')
-h, e, ne, w, idx = [0] * N, [0] * M, [0] * M, [0] * M, 0
+h, e, ne, w, idx = [0] * N, [0] * M * 2, [0] * M * 2, [0] * M * 2, 0
 def ipt(): return map(int, input().split())
 
 
