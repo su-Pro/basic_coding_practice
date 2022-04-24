@@ -27,15 +27,15 @@
 
 - [x] AcWing 1097. 池塘计数 TODO: BFS flood-fill 补充
 - [x] AcWing 1098. 城堡问题
-- [ ] AcWing 1106. 山峰和山谷
-- [ ] AcWing 1112. 迷宫
-- [ ] AcWing 1113. 红与黑
+- [x] AcWing 1106. 山峰和山谷
+- [x] AcWing 1112. 迷宫
+- [x] AcWing 1113. 红与黑
 
 ## *状态搜索
 - [ ] 和二进制枚举的关系？
 
-- [ ] AcWing 1116. 马走日
-- [ ] AcWing 1117. 单词接龙
+- [x] AcWing 1116. 马走日
+- [x] AcWing 1117. 单词接龙
 - [ ] AcWing 1118. 分成互质组
 
 ## *记忆化
