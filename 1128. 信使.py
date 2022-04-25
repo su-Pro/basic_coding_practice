@@ -22,10 +22,11 @@ def dijkstra():
 
 for _ in range(m):
     u, v, z = ipt()
-    graph_edges[u][v] = min(graph_edges[u][v],z)
-    graph_edges[v][u] = min(graph_edges[u][v],z)
+    graph_edges[u][v] = min(graph_edges[u][v], z)
+    graph_edges[v][u] = min(graph_edges[u][v], z)
 
 dijkstra()
+# TODO: heapify_dijkstra + spfa
 res = 0
 for u in range(1, n + 1):
     if dist[u] == D:

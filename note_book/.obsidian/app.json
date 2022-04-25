@@ -1,6 +1,8 @@
 {
+  "emacsyKeys": false,
   "vimMode": true,
   "readableLineLength": true,
-  "emacsyKeys": false,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "promptDelete": false,
+  "defaultViewMode": "preview"
 }

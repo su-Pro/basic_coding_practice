@@ -1,4 +1,6 @@
 import collections
+from heapq import heapify
+import heapq
 def ipt_helper(): return map(int, input().split())
 
 
@@ -17,6 +19,13 @@ def add(u, v, z):
     ne[idx] = h[u]
     h[u] = idx
     edges[idx] = z
+
+
+# # TODO: 明日练习
+# def heapify_dijkstra():
+#     pq = []
+#     heapq.heappush(pq,(1,))
+#     pass
 
 
 def spfa():
@@ -45,5 +54,6 @@ for _ in range(m):
     u, v, z = ipt_helper()
     add(u, v, z)
 
-dist_n = spfa()
+# dist_n = spfa()
+dist_n = heapify_dijkstra()
 print(-1 if dist_n == D else dist_n)

@@ -1,12 +1,14 @@
 import collections
 
 N, n = int(1e3 + 5), int(input())
+# pre_state 存储的是右哪个状态转移过来的
 g, pre_state = [list(input().split())
                 for x in range(n)], [[-1] * N for x in range(N)]
 dx, dy = (-1, 1, 0, 0), (0, 0, -1, 1)
 
 
-def isok(x, y): return 0 <= x < n and 0 <= y < n and pre_state[x][y] == -1 and g[x][y] == '0'
+def isok(
+    x, y): return 0 <= x < n and 0 <= y < n and pre_state[x][y] == -1 and g[x][y] == '0'
 
 
 def bfs():
@@ -18,7 +20,8 @@ def bfs():
         x, y = que.popleft()
         for i in range(4):
             nx, ny = dx[i] + x, dy[i] + y
-            if not isok(nx, ny): continue
+            if not isok(nx, ny):
+                continue
             pre_state[nx][ny] = (x, y)
             que.append((nx, ny))
 
