@@ -1,0 +1,109 @@
+{
+  "main": {
+    "id": "397e7d92ed1af770",
+    "type": "split",
+    "children": [
+      {
+        "id": "25f63e36bc3b0d3e",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "图论/vb.md",
+            "mode": "preview"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "eb07327d70118aab",
+    "type": "split",
+    "children": [
+      {
+        "id": "2a3daada38caa737",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f67ae385a350ad27",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "cea8e26a61c69be9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "61431978f8542b8c",
+    "type": "split",
+    "children": [
+      {
+        "id": "b1d6edce6c3414c2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b27a1f87e5cbf698",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "图论/vb.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "0025eb2a0106d5f8",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "图论/vb.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "active": "25f63e36bc3b0d3e",
+  "lastOpenFiles": [
+    "图论/vb.md",
+    "图论/图论.md",
+    "图论/BFS.md",
+    "BFS 题/175. 电路维修.md",
+    "BFS 题/164. 可达性统计.md",
+    "Pasted image 20220416142825.png",
+    "图论/存储.md"
+  ]
+}

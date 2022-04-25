@@ -17,9 +17,9 @@ def kruskal():
         p[i] = i
     edges.sort(key=lambda edge: edge[2])
     for u, v, z in edges:
-        u, v = find(u), find[v]
+        u, v = find(u), find(v)
         if u != v:
-            p[v] = v
+            p[v] = u
             # 这里的z，是属于最小生成树的
         else:
             # 这里的z，是不属于最小生树的，要被去掉的边权
