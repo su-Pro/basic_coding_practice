@@ -1,0 +1,33 @@
+def ipt(): return map(int, input().split())
+
+
+N = 50
+n, m = ipt()
+g, vt = [list(ipt()) for x in range(n)], [[False] * N for x in range(N)]
+dx, dy = (0, -1, 0, 1), (-1, 0, 1, 0)
+
+# 内部搜索
+
+
+def depth_first_search():
+    cnt, area_max = 0, 0
+
+    def dfs(x, y):
+        vt[x][y] = True
+        cnt = 1
+        for d in range(4):
+            nx, ny = x + dx[d], y + dy[d]
+            if 0 <= nx < n and 0 <= ny < m and not vt[nx][ny] and not g[x][y] >> d & 1:
+                cnt += dfs(nx, ny)
+        return cnt
+
+    for i in range(n):
+        for j in range(m):
+            if not vt[i][j]:
+                area_max = max(area_max, dfs(i, j))
+                cnt += 1
+
+    print(cnt, area_max, sep="\n")
+
+
+depth_first_search()
