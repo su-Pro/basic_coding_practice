@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "图论/三镖客 dijkstra spfa floyd.md",
-            "mode": "preview"
+            "file": "最小生成树.md",
+            "mode": "source"
           }
         }
       }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "图论/三镖客 dijkstra spfa floyd.md",
+                "file": "最小生成树.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "图论/三镖客 dijkstra spfa floyd.md"
+                "file": "最小生成树.md"
               }
             }
           }
@@ -98,15 +98,15 @@
   },
   "active": "501017a553b7bc97",
   "lastOpenFiles": [
-    "图论/三镖客 dijkstra spfa floyd.md",
+    "最小生成树.md",
     "图论/图论.md",
+    "图论/Flood Fill.md",
+    "图论/强连通分量.md",
+    "图论/存储.md",
+    "图论/三镖客 dijkstra spfa floyd.md",
     "图论/Pasted image 20220421174535.png",
     "图论/Pasted image 20220416142825.png",
     "图论/E - Bishop 2.md",
-    "图论/Flood Fill.md",
-    "未命名.md",
-    "图论/存储.md",
-    "图论/flood-fill/1113. 红与黑.md",
-    "图论/最短路/1100. 抓住那头牛.md"
+    "图论/flood-fill/1113. 红与黑.md"
   ]
 }
