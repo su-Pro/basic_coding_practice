@@ -1,4 +1,4 @@
 .idea
 .vscode
 node_modules
-/.obsidian
+/note_book/.obsidian

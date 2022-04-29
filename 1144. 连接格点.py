@@ -6,7 +6,7 @@ sys.setrecursionlimit(10000000)
 
 def ipt(): return map(int, input().split())
 
-@functools.lru_cache(None)
+
 def find(u):
     if dsu[u] != u:
         dsu[u] = find(dsu[u])
