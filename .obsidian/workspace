@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "README.md",
-            "mode": "preview"
+            "file": "note_book/数据结构/并查集.md",
+            "mode": "source"
           }
         }
       }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "note_book/数据结构/并查集.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "note_book/数据结构/并查集.md"
               }
             }
           }
@@ -98,15 +98,15 @@
   },
   "active": "d1a1376ff0ae8c49",
   "lastOpenFiles": [
+    "note_book/数据结构/并查集.md",
+    "note_book/problem_set/837. 连通块中点的数量.md",
+    "note_book/problem_set/836. 合并集合.md",
     "README.md",
     "新 - 竞赛/LC 291/LC 291.md",
     "新 - 竞赛/LC 291/D.md",
     "新 - 竞赛/LC 291/C.md",
     "新 - 竞赛/LC 291/B.md",
     "新 - 竞赛/LC 291/A.md",
-    "图论/最小生成树.md",
-    "图论/图论.md",
-    "图论/建图技巧.md",
-    "problem_set/1146. 新的开始.md"
+    "图论/最小生成树.md"
   ]
 }
