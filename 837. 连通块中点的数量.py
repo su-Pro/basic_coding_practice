@@ -1,36 +1,39 @@
-N, t = map(int, input().split())
+def find(u):
+    if dsu[u] != u:
+        dsu[u] = find(dsu[u])
+    return dsu[u]
 
 
-def makSet(size):
-    fa = [0] * size
-    for i in range(size):
-        fa[i] = i
-    return fa
+n, k = map(int, input().split())
+dsu, dsu_size = [0] * (n + 1), [1] * (n + 1)
 
+# 1. 初始化并查集
+for u in range(1, n + 1):
+    dsu[u] = u
 
-def find(x):
-    if x != fa[x]:
-        fa[x] = find(fa[x])
-    return fa[x]
+# 2. 处理询问
 
+for _ in range(k):
+    line = input().split()
+    opt = line[0]
 
-def merge(a, b):
-    rA, rB = find(a), find(b)
-    sn[rB] += sn[rA]  # 更新大小
-    fa[rA] = rB  # 把a的祖先，移到b祖先下面
+    # 获取当前a 所在联通块的大小
+    if opt == 'Q2':
+        u = int(line[1])
+        print(dsu_size[find(u)])
+        continue
+    u, v = int(line[1]), int(line[2])
+    # 检查u，v 是否在一个集合中
+    if opt == 'Q1':
+        u, v = find(u), find(v)
+        print("Yes" if u == v else "No")
+        continue
 
-
-fa, sn = makSet(N + 1), [1] * (N + 1)
-for _ in range(t):
-    l = list(input().split())
-    idy = l[0]
-    if idy == 'C':
-        a, b = map(int, l[1:])
-        if find(a) == find(b):
-            continue
-        merge(a, b)
-    elif idy == 'Q1':
-        a, b = map(int, l[1:])
-        print('Yes' if find(a) == find(b) else "No")
-    else:
-        print(sn[find(int(l[1]))])
+    # 建立联通块，u <-> v
+    if opt == 'C':
+        u, v = find(u), find(v)
+        # Note: 如果两个数据明确说u,v 可能是相同点，此时不要再去盲目合并...
+        if u == v: continue
+        dsu_size[v] += dsu_size[u]
+        dsu[u] = v
+        continue

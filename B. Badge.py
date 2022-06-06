@@ -3,7 +3,7 @@ pos = [0] + list(map(int, input().split()))
 
 
 # 对每个定点进行检查
-def find(u):
+def bruteForce(u):
     # 注意，对于每个顶点都有一个全新的检查状况表
     vs = [False] * (n + 1)
     v = u
@@ -21,6 +21,6 @@ def dfs(u):
 
 
 for i in range(1, n + 1):
-    # print(find(i))
+    # print(bruteForce(i))
     vs = [False] * (n + 1)
     print(dfs(i))

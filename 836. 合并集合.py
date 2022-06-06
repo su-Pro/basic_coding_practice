@@ -2,15 +2,16 @@ N, M = map(int, input().split())
 fa = [0] * (N + 1)
 
 
-def makeSet(size):
+def initial_dsu(size: int):
     global fa
-    for i in range(1, N + 1):
+    for i in range(1, size + 1):
         fa[i] = i
 
 
 def merge(a, b):
     global fa
     rotA, rotB = find(a), find(b)
+    # 将集合a 合并至 集合b中
     fa[rotA] = rotB
 
 
@@ -21,7 +22,7 @@ def find(a):
     return fa[a]
 
 
-makeSet(N)
+initial_dsu(N)
 
 for _ in range(M):
     opt, a, b = list(input().split())
